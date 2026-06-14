@@ -110,16 +110,14 @@ body {
   display: none;
 }
 
+/* CARD KHÔNG KÉO DÀI NỮA */
 .card {
-  flex: 1;
-  min-height: 0;
   background: white;
   border-radius: 14px;
-  padding: 7px;
+  padding: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  flex: 0 0 auto;
 }
 
 .card-head {
@@ -167,21 +165,32 @@ body {
   grid-template-columns: 1fr 78px;
   gap: 8px;
   align-items: center;
-  margin: 3px 0 7px;
+  margin: 4px 0 8px;
 }
 
 .hero-left {
   text-align: center;
+  min-width: 0;
+}
+
+.main-line {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
 }
 
 .main-word {
-  font-size: 42px;
+  font-size: 54px;
   font-weight: bold;
   line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-reading {
-  font-size: 14px;
+  font-size: 17px;
   color: #526070;
   margin-top: 2px;
 }
@@ -190,9 +199,9 @@ body {
   border: none;
   background: none;
   color: #2683ff;
-  font-size: 20px;
+  font-size: 21px;
   padding: 0;
-  margin-top: 1px;
+  text-align: right;
 }
 
 .hero-actions {
@@ -219,21 +228,21 @@ body {
   color: white;
 }
 
+/* KHU VỰC 1 TO HƠN */
 .word-table {
   border: 1px solid #e2e8f0;
-  border-radius: 11px;
+  border-radius: 13px;
   overflow: hidden;
-  flex-shrink: 0;
 }
 
 .word-table div {
   display: grid;
-  grid-template-columns: 35px 1fr 68px 24px;
+  grid-template-columns: 40px 1fr 82px 26px;
   align-items: center;
-  padding: 5.5px 5px;
+  padding: 7.5px 7px;
   border-bottom: 1px solid #e2e8f0;
-  font-size: 11.5px;
-  line-height: 1.1;
+  font-size: 14px;
+  line-height: 1.15;
 }
 
 .word-table div:last-child {
@@ -245,15 +254,15 @@ body {
   border: none;
   background: none;
   color: #2683ff;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0;
 }
 
 .tag {
   color: white;
   border-radius: 5px;
-  padding: 3px 4px;
-  font-size: 9.5px;
+  padding: 3px 5px;
+  font-size: 10px;
   font-weight: bold;
   margin-right: 4px;
 }
@@ -264,29 +273,29 @@ body {
 .cn { background: #f97316; }
 .ko { background: #ec4899; }
 
+/* KHU VỰC 2 TO HƠN */
 .example-box {
-  margin-top: 6px;
+  margin-top: 7px;
   background: #f0fff8;
   border: 1px solid #bcebd8;
-  border-radius: 11px;
-  padding: 6px;
+  border-radius: 13px;
+  padding: 8px;
   overflow: hidden;
-  flex-shrink: 0;
 }
 
 .example-box h3 {
-  margin: 0 0 3px;
+  margin: 0 0 5px;
   color: #40776c;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .example-box p {
   display: grid;
-  grid-template-columns: 35px 1fr 24px;
+  grid-template-columns: 40px 1fr 26px;
   align-items: center;
-  margin: 3px 0;
-  font-size: 11.2px;
-  line-height: 1.12;
+  margin: 4.5px 0;
+  font-size: 13.5px;
+  line-height: 1.18;
 }
 
 .bottom-buttons {
@@ -294,7 +303,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-top: 5px;
+  margin-top: auto;
   flex-shrink: 0;
 }
 

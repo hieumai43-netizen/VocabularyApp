@@ -102,7 +102,6 @@ body {
 
 #progressBar {
   height: 6px;
-  width: 1%;
   background: #22c55e;
   border-radius: 20px;
 }
@@ -163,53 +162,51 @@ body {
   font-size: 11px;
 }
 
-.main-area {
-  display: flex;
-  justify-content: center;
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 78px;
+  gap: 8px;
   align-items: center;
-  gap: 12px;
+  margin: 3px 0 7px;
+}
+
+.hero-left {
+  text-align: center;
 }
 
 .main-word {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 2px;
+  font-size: 42px;
   font-weight: bold;
   line-height: 1;
 }
 
 .main-reading {
-  text-align: center;
-  font-size: 13px;
-  margin-top: 1px;
+  font-size: 14px;
   color: #526070;
+  margin-top: 2px;
 }
 
 .sound-main {
   border: none;
   background: none;
   color: #2683ff;
-  font-size: 22px;
+  font-size: 20px;
   padding: 0;
+  margin-top: 1px;
 }
 
-.actions {
+.hero-actions {
   display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 
-.top-actions {
-  margin: 5px 0 6px;
-}
-
-.actions button,
-.bottom-buttons button {
-  flex: 1;
+.hero-actions button {
   border: none;
   border-radius: 8px;
-  padding: 7px 3px;
+  padding: 6px 2px;
   font-weight: bold;
-  font-size: 10.5px;
+  font-size: 10px;
 }
 
 .bad {
@@ -226,6 +223,7 @@ body {
   border: 1px solid #e2e8f0;
   border-radius: 11px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .word-table div {
@@ -273,6 +271,7 @@ body {
   border-radius: 11px;
   padding: 6px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .example-box h3 {
@@ -296,6 +295,7 @@ body {
   align-items: center;
   gap: 6px;
   margin-top: 5px;
+  flex-shrink: 0;
 }
 
 .bottom-buttons span {
@@ -304,6 +304,15 @@ body {
   font-weight: bold;
   color: #64748b;
   font-size: 11px;
+}
+
+.bottom-buttons button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 3px;
+  font-weight: bold;
+  font-size: 10.5px;
 }
 
 .bottom-buttons button:last-child {

@@ -33,34 +33,18 @@ function getMainLanguage(word) {
   const mode = modeSelect.value;
 
   if (mode === "jp") {
-    return {
-      text: word.jp,
-      reading: word.kana,
-      lang: "ja-JP"
-    };
+    return { text: word.jp, reading: word.kana, lang: "ja-JP" };
   }
 
   if (mode === "en") {
-    return {
-      text: word.en,
-      reading: word.ipa,
-      lang: "en-US"
-    };
+    return { text: word.en, reading: word.ipa, lang: "en-US" };
   }
 
   if (mode === "cn") {
-    return {
-      text: word.cn,
-      reading: word.pinyin,
-      lang: "zh-CN"
-    };
+    return { text: word.cn, reading: word.pinyin, lang: "zh-CN" };
   }
 
-  return {
-    text: word.ko,
-    reading: word.koreanReading,
-    lang: "ko-KR"
-  };
+  return { text: word.ko, reading: word.koreanReading, lang: "ko-KR" };
 }
 
 function renderCard() {
@@ -121,6 +105,7 @@ function renderCard() {
     <p>
       <span class="tag vi">VI</span>
       <span>${word.examples.vi}</span>
+      <span></span>
     </p>
 
     <p>
@@ -162,7 +147,6 @@ function speak(text, lang) {
 function speakMain() {
   const word = filteredData[currentIndex];
   const main = getMainLanguage(word);
-
   speak(main.text, main.lang);
 }
 
@@ -179,7 +163,6 @@ function nextCard() {
 
 function prevCard() {
   currentIndex = (currentIndex - 1 + filteredData.length) % filteredData.length;
-
   resetStatus();
   renderCard();
 }
@@ -209,10 +192,7 @@ optionBtn.addEventListener("click", () => {
 });
 
 categorySelect.addEventListener("change", filterCategory);
-
-modeSelect.addEventListener("change", () => {
-  renderCard();
-});
+modeSelect.addEventListener("change", renderCard);
 
 initCategory();
 renderCard();

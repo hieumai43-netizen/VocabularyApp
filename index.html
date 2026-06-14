@@ -24,12 +24,14 @@
 
   <section class="filters">
     <select id="categorySelect"></select>
+
     <select id="modeSelect">
       <option value="jp">Nhật - Việt</option>
       <option value="en">Anh - Việt</option>
       <option value="cn">Trung - Việt</option>
       <option value="ko">Hàn - Việt</option>
     </select>
+
     <button id="optionBtn">⚙</button>
   </section>
 
@@ -53,6 +55,7 @@
     <div class="progress-bg">
       <div id="progressBar"></div>
     </div>
+    <div id="percentText" class="percent"></div>
   </section>
 
   <main class="card">
@@ -63,18 +66,20 @@
       <span id="statusBadge">Chưa nhớ</span>
     </div>
 
-    <div class="main-area">
-      <div>
+    <section class="hero-layout">
+
+      <div class="hero-left">
         <div class="main-word" id="mainWord"></div>
         <div class="main-reading" id="mainReading"></div>
+        <button class="sound-main" onclick="speakMain()">🔊</button>
       </div>
-      <button class="sound-main" onclick="speakMain()">🔊</button>
-    </div>
 
-    <section class="actions top-actions">
-      <button onclick="reviewLater()">↻ Ôn sau</button>
-      <button class="bad" onclick="markBad()">✕ Chưa nhớ</button>
-      <button class="good" onclick="markGood()">✓ Đã nhớ</button>
+      <div class="hero-actions">
+        <button onclick="reviewLater()">↻ Ôn sau</button>
+        <button class="bad" onclick="markBad()">✕ Chưa</button>
+        <button class="good" onclick="markGood()">✓ Nhớ</button>
+      </div>
+
     </section>
 
     <section class="word-table" id="wordTable"></section>

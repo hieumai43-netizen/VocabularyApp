@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học từ vựng</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="phone">
+
+  <header class="top">
+    <button>☰</button>
+    <h2>📖 Học từ vựng</h2>
+    <button>🔍</button>
+  </header>
+
+  <section class="filters">
+    <select id="categorySelect"></select>
+    <select id="modeSelect">
+      <option value="jp">Nhật - Việt</option>
+      <option value="en">Anh - Việt</option>
+      <option value="cn">Trung - Việt</option>
+      <option value="ko">Hàn - Việt</option>
+    </select>
+    <button id="optionBtn">⚙ Tùy chọn</button>
+  </section>
+
+  <section id="optionBox" class="option-box hidden">
+    <label><input type="checkbox" id="randomCheck"> Random</label>
+    <label>
+      Tốc độ
+      <select id="speedSelect">
+        <option value="0.8">Chậm</option>
+        <option value="1" selected>Bình thường</option>
+        <option value="1.2">Nhanh</option>
+      </select>
+    </label>
+  </section>
+
+  <section class="progress-box">
+    <div class="progress-text">
+      <b>Tiến độ hôm nay</b>
+      <span id="progressText"></span>
+    </div>
+    <div class="progress-bg">
+      <div id="progressBar"></div>
+    </div>
+    <div class="percent" id="percentText"></div>
+  </section>
+
+  <main class="card">
+
+    <div class="card-head">
+      <button class="star">★</button>
+      <span id="countBadge"></span>
+      <span id="statusBadge">Chưa nhớ</span>
+    </div>
+
+    <div class="main-word" id="mainWord"></div>
+    <div class="main-reading" id="mainReading"></div>
+    <button class="sound-main" onclick="speakMain()">🔊</button>
+
+    <section class="word-table" id="wordTable"></section>
+
+    <section class="example-box">
+      <h3>💬 Ví dụ</h3>
+      <div id="exampleList"></div>
+    </section>
+
+    <section class="actions">
+      <button onclick="reviewLater()">↻ Ôn lại sau</button>
+      <button class="bad" onclick="markBad()">✕ Chưa nhớ</button>
+      <button class="good" onclick="markGood()">✓ Đã nhớ</button>
+    </section>
+
+  </main>
+
+  <section class="bottom-buttons">
+    <button onclick="prevCard()">← Quay lại</button>
+    <span id="bottomCount"></span>
+    <button onclick="nextCard()">Tiếp theo →</button>
+  </section>
+
+  <nav class="bottom-nav">
+    <div>🏠<br>Học</div>
+    <div>☷<br>Danh mục</div>
+    <div>☆<br>Yêu thích</div>
+    <div>📊<br>Thống kê</div>
+    <div>⚙<br>Cài đặt</div>
+  </nav>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

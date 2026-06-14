@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef3f8;
+  font-family: Arial, sans-serif;
+  color: #253044;
+}
+
+.phone {
+  max-width: 430px;
+  min-height: 100vh;
+  margin: auto;
+  background: #f8fafc;
+  padding: 16px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top button {
+  border: none;
+  background: none;
+  font-size: 22px;
+}
+
+.top h2 {
+  font-size: 18px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.filters select,
+.filters button {
+  flex: 1;
+  border: 1px solid #e1e7ef;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.option-box {
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-box {
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.progress-bg {
+  height: 10px;
+  background: #e8edf3;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#progressBar {
+  height: 10px;
+  width: 1%;
+  background: #22c55e;
+  border-radius: 20px;
+}
+
+.percent {
+  text-align: right;
+  color: #22c55e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star {
+  border: none;
+  background: none;
+  color: #2683ff;
+  font-size: 24px;
+}
+
+#countBadge {
+  background: #eef2f7;
+  padding: 6px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+#statusBadge {
+  background: #ffe8f0;
+  color: #ff4f86;
+  padding: 7px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.remembered {
+  background: #dcfce7 !important;
+  color: #16a34a !important;
+  padding: 7px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.main-word {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+.main-reading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 6px;
+  color: #526070;
+}
+
+.sound-main {
+  display: block;
+  margin: 8px auto 18px;
+  border: none;
+  background: none;
+  color: #2683ff;
+  font-size: 26px;
+}
+
+.word-table {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.word-table div {
+  display: grid;
+  grid-template-columns: 45px 1fr 85px 35px;
+  align-items: center;
+  padding: 11px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.word-table div:last-child {
+  border-bottom: none;
+}
+
+.word-table button,
+.example-box button {
+  border: none;
+  background: none;
+  color: #2683ff;
+  font-size: 18px;
+}
+
+.tag {
+  color: white;
+  border-radius: 6px;
+  padding: 4px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.vi { background: #22c55e; }
+.ja { background: #3b82f6; }
+.en { background: #6366f1; }
+.cn { background: #f97316; }
+.ko { background: #ec4899; }
+
+.example-box {
+  margin-top: 14px;
+  background: #f0fff8;
+  border: 1px solid #bcebd8;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.example-box h3 {
+  margin: 0 0 8px;
+  color: #40776c;
+  font-size: 16px;
+}
+
+.example-box p {
+  display: grid;
+  grid-template-columns: 45px 1fr 35px;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.actions button,
+.bottom-buttons button {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  font-weight: bold;
+}
+
+.bad {
+  background: #ffe4eb;
+  color: #ef476f;
+}
+
+.good {
+  background: #22c55e;
+  color: white;
+}
+
+.bottom-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.bottom-buttons span {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #64748b;
+}
+
+.bottom-buttons button:last-child {
+  background: #2683ff;
+  color: white;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  margin-top: 12px;
+  padding: 12px 0;
+  border-radius: 18px;
+  font-size: 12px;
+  color: #526070;
+}

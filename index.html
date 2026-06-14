@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8" />
+  <title>Học từ vựng</title>
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0" />
-
-<title>Học từ vựng</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="manifest" href="manifest.json">
-
-<meta name="theme-color" content="#2683ff">
-
-<link rel="apple-touch-icon" href="icon.png">
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2683ff">
+  <link rel="apple-touch-icon" href="icon.png">
 </head>
+
 <body>
 
 <div class="phone">
@@ -36,7 +30,7 @@ content="width=device-width, initial-scale=1.0" />
       <option value="cn">Trung - Việt</option>
       <option value="ko">Hàn - Việt</option>
     </select>
-    <button id="optionBtn">⚙ Tùy chọn</button>
+    <button id="optionBtn">⚙</button>
   </section>
 
   <section id="optionBox" class="option-box hidden">
@@ -59,7 +53,6 @@ content="width=device-width, initial-scale=1.0" />
     <div class="progress-bg">
       <div id="progressBar"></div>
     </div>
-    <div class="percent" id="percentText"></div>
   </section>
 
   <main class="card">
@@ -70,21 +63,25 @@ content="width=device-width, initial-scale=1.0" />
       <span id="statusBadge">Chưa nhớ</span>
     </div>
 
-    <div class="main-word" id="mainWord"></div>
-    <div class="main-reading" id="mainReading"></div>
-    <button class="sound-main" onclick="speakMain()">🔊</button>
+    <div class="main-area">
+      <div>
+        <div class="main-word" id="mainWord"></div>
+        <div class="main-reading" id="mainReading"></div>
+      </div>
+      <button class="sound-main" onclick="speakMain()">🔊</button>
+    </div>
+
+    <section class="actions top-actions">
+      <button onclick="reviewLater()">↻ Ôn sau</button>
+      <button class="bad" onclick="markBad()">✕ Chưa nhớ</button>
+      <button class="good" onclick="markGood()">✓ Đã nhớ</button>
+    </section>
 
     <section class="word-table" id="wordTable"></section>
 
     <section class="example-box">
       <h3>💬 Ví dụ</h3>
       <div id="exampleList"></div>
-    </section>
-
-    <section class="actions">
-      <button onclick="reviewLater()">↻ Ôn lại sau</button>
-      <button class="bad" onclick="markBad()">✕ Chưa nhớ</button>
-      <button class="good" onclick="markGood()">✓ Đã nhớ</button>
     </section>
 
   </main>

@@ -2,342 +2,410 @@
   box-sizing: border-box;
 }
 
-html,
 body {
   margin: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #eef3f8;
+  background: #eef3fb;
   font-family: Arial, sans-serif;
-  color: #253044;
+  color: #102033;
 }
 
-.phone {
+.app {
   max-width: 430px;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
   margin: auto;
-  background: #f8fafc;
-  padding: 6px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  background: #f9fbff;
+  padding: 14px;
+  padding-bottom: 90px;
 }
 
-.top {
-  height: 30px;
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top button {
-  border: none;
-  background: none;
+header h2 {
   font-size: 18px;
+  margin: 10px 0;
 }
 
-.top h2 {
-  font-size: 15px;
-  margin: 0;
+.icon,
+.setting {
+  border: none;
+  background: white;
+  font-size: 20px;
+  border-radius: 12px;
+  padding: 8px 12px;
 }
 
 .filters {
-  display: flex;
-  gap: 5px;
-  margin: 5px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 52px;
+  gap: 10px;
+  margin: 10px 0;
 }
 
-.filters select,
-.filters button {
-  flex: 1;
-  min-width: 0;
-  border: 1px solid #e1e7ef;
+select {
+  border: none;
   background: white;
-  border-radius: 8px;
-  padding: 6px 3px;
+  border-radius: 12px;
+  padding: 12px;
   font-weight: bold;
-  font-size: 11px;
+  box-shadow: 0 2px 8px #dfe7f2;
 }
 
-.filters button {
-  flex: 0.45;
-}
-
-.option-box {
-  background: white;
-  border-radius: 10px;
-  padding: 6px;
-  margin-bottom: 5px;
+.modeSwitch {
   display: flex;
-  justify-content: space-between;
-  gap: 6px;
-  font-size: 11px;
+  gap: 10px;
+  margin: 10px 0;
 }
 
-.hidden {
-  display: none;
-}
-
-.progress-box {
-  background: white;
-  border-radius: 10px;
-  padding: 6px;
-  margin-bottom: 5px;
-}
-
-.progress-text {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-}
-
-.progress-bg {
-  height: 6px;
-  background: #e8edf3;
-  border-radius: 20px;
-  margin-top: 5px;
-}
-
-#progressBar {
-  height: 6px;
-  background: #22c55e;
-  border-radius: 20px;
-}
-
-.percent {
-  display: none;
-}
-
-/* CARD KHÔNG KÉO DÀI NỮA */
-.card {
-  background: white;
+.modeSwitch button {
+  flex: 1;
+  border: none;
+  padding: 10px;
   border-radius: 14px;
-  padding: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  overflow: hidden;
-  flex: 0 0 auto;
+  background: #e9edf5;
+  font-weight: bold;
 }
 
-.card-head {
-  height: 26px;
+.modeSwitch .active {
+  background: #2f80ed;
+  color: white;
+}
+
+.progressText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.progressBar {
+  height: 7px;
+  background: #e4e9f2;
+  border-radius: 20px;
+  margin: 8px 0 16px;
+}
+
+#progressFill {
+  width: 50%;
+  height: 100%;
+  background: #20c76a;
+  border-radius: 20px;
+}
+
+.card,
+.listenCard {
+  background: white;
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.topRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .star {
-  border: none;
-  background: none;
-  color: #2683ff;
-  font-size: 19px;
+  color: #2f80ed;
+  font-size: 28px;
 }
 
-#countBadge {
-  background: #eef2f7;
-  padding: 4px 16px;
-  border-radius: 8px;
+.counter {
+  background: #eef1f6;
+  padding: 6px 18px;
+  border-radius: 20px;
   font-weight: bold;
-  font-size: 11px;
 }
 
-#statusBadge {
+.status {
   background: #ffe8f0;
-  color: #ff4f86;
-  padding: 5px 9px;
-  border-radius: 9px;
+  color: #ff4d8d;
+  padding: 7px 12px;
+  border-radius: 14px;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 13px;
 }
 
-.remembered {
-  background: #dcfce7 !important;
-  color: #16a34a !important;
-  padding: 5px 9px;
-  border-radius: 9px;
+.mainWord {
+  text-align: center;
+  font-size: 46px;
   font-weight: bold;
-  font-size: 11px;
+  margin-top: 20px;
 }
 
-.hero-layout {
+.mainRead {
+  text-align: center;
+  font-size: 18px;
+  color: #65758a;
+  margin: 10px;
+}
+
+.smallSpeak {
+  display: block;
+  margin: 0 auto 18px;
+  border: none;
+  background: #edf5ff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.wordTable {
+  border: 1px solid #dfe6ef;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.wordTable div {
   display: grid;
-  grid-template-columns: 1fr 78px;
+  grid-template-columns: 44px 1fr auto auto;
+  align-items: center;
   gap: 8px;
-  align-items: center;
-  margin: 4px 0 8px;
-}
-
-.hero-left {
-  text-align: center;
-  min-width: 0;
-}
-
-.main-line {
-  display: grid;
-  grid-template-columns: 1fr 30px;
-  align-items: center;
-}
-
-.main-word {
-  font-size: 54px;
-  font-weight: bold;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.main-reading {
-  font-size: 17px;
-  color: #526070;
-  margin-top: 2px;
-}
-
-.sound-main {
-  border: none;
-  background: none;
-  color: #2683ff;
-  font-size: 21px;
-  padding: 0;
-  text-align: right;
-}
-
-.hero-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.hero-actions button {
-  border: none;
-  border-radius: 8px;
-  padding: 6px 2px;
-  font-weight: bold;
-  font-size: 10px;
-}
-
-.bad {
-  background: #ffe4eb;
-  color: #ef476f;
-}
-
-.good {
-  background: #22c55e;
-  color: white;
-}
-
-/* KHU VỰC 1 TO HƠN */
-.word-table {
-  border: 1px solid #e2e8f0;
-  border-radius: 13px;
-  overflow: hidden;
-}
-
-.word-table div {
-  display: grid;
-  grid-template-columns: 40px 1fr 82px 26px;
-  align-items: center;
-  padding: 7.5px 7px;
-  border-bottom: 1px solid #e2e8f0;
-  font-size: 14px;
-  line-height: 1.15;
-}
-
-.word-table div:last-child {
-  border-bottom: none;
-}
-
-.word-table button,
-.example-box button {
-  border: none;
-  background: none;
-  color: #2683ff;
-  font-size: 16px;
-  padding: 0;
-}
-
-.tag {
-  color: white;
-  border-radius: 5px;
-  padding: 3px 5px;
-  font-size: 10px;
-  font-weight: bold;
-  margin-right: 4px;
-}
-
-.vi { background: #22c55e; }
-.ja { background: #3b82f6; }
-.en { background: #6366f1; }
-.cn { background: #f97316; }
-.ko { background: #ec4899; }
-
-/* KHU VỰC 2 TO HƠN */
-.example-box {
-  margin-top: 7px;
-  background: #f0fff8;
-  border: 1px solid #bcebd8;
-  border-radius: 13px;
-  padding: 8px;
-  overflow: hidden;
-}
-
-.example-box h3 {
-  margin: 0 0 5px;
-  color: #40776c;
+  padding: 10px;
+  border-bottom: 1px solid #edf1f6;
   font-size: 15px;
 }
 
-.example-box p {
-  display: grid;
-  grid-template-columns: 40px 1fr 26px;
-  align-items: center;
-  margin: 4.5px 0;
-  font-size: 13.5px;
-  line-height: 1.18;
+.wordTable div:last-child {
+  border-bottom: none;
 }
 
-.bottom-buttons {
-  height: 36px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  flex-shrink: 0;
-}
-
-.bottom-buttons span {
-  flex: 1;
-  text-align: center;
-  font-weight: bold;
+.wordTable small {
   color: #64748b;
-  font-size: 11px;
 }
 
-.bottom-buttons button {
-  flex: 1;
+.wordTable button,
+.exampleBox button {
   border: none;
-  border-radius: 8px;
-  padding: 7px 3px;
-  font-weight: bold;
-  font-size: 10.5px;
+  background: transparent;
+  font-size: 17px;
 }
 
-.bottom-buttons button:last-child {
-  background: #2683ff;
+.tag {
+  display: inline-block;
+  min-width: 32px;
+  text-align: center;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 7px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.vi { background: #20c76a; }
+.ja { background: #2f80ed; }
+.en { background: #6c5ce7; }
+.cn { background: #ff7a1a; }
+.ko { background: #ff4d9d; }
+
+.exampleBox {
+  margin-top: 16px;
+  background: #effdf7;
+  border: 1px solid #c7f2df;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.exampleBox h3 {
+  margin: 0 0 8px;
+  color: #2b9b65;
+}
+
+.exampleBox p {
+  margin: 8px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: bold;
+}
+
+#prevBtn {
+  background: #edf0f5;
+  color: #2f80ed;
+}
+
+#nextBtn {
+  background: #2f80ed;
   color: white;
 }
 
-.bottom-nav {
-  height: 42px;
+.hidden {
+  display: none;
+}
+
+.listenTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7b4df4;
+  font-weight: bold;
+  margin: 18px 4px;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch span {
+  display: block;
+  width: 54px;
+  height: 30px;
+  background: #c7cbd4;
+  border-radius: 20px;
+  position: relative;
+}
+
+.switch span::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.switch input:checked + span {
+  background: #7b4df4;
+}
+
+.switch input:checked + span::after {
+  left: 27px;
+}
+
+.listenCard {
+  text-align: center;
+}
+
+.listenWord {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.listenRead {
+  color: #65758a;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.bigPlay {
+  margin-top: 35px;
+  width: 96px;
+  height: 96px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2f80ed, #7b4df4);
+  color: white;
+  font-size: 42px;
+}
+
+#playingText {
+  color: #65758a;
+}
+
+.listenExample {
+  background: #f0f6ff;
+  margin: 24px 0;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.audioProgress {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#audioRange {
+  width: 100%;
+  accent-color: #7b4df4;
+}
+
+.audioControls {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.audioControls button {
+  border: none;
   background: white;
-  margin-top: 3px;
-  padding: 5px 0;
-  border-radius: 14px;
-  font-size: 9.8px;
-  color: #526070;
-  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.pause {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #7b4df4 !important;
+  color: white;
+  font-size: 34px !important;
+}
+
+.listenMenu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.listenMenu button {
+  border: none;
+  background: white;
+  font-weight: bold;
+}
+
+.listenMenu small {
+  font-size: 11px;
+  color: #555;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 430px;
+  width: 100%;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 8px 6px;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+}
+
+nav button {
+  border: none;
+  background: white;
+  font-size: 12px;
+  color: #59677c;
+}
+
+.centerBtn {
+  background: #2f80ed !important;
+  color: white !important;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  font-size: 24px;
 }

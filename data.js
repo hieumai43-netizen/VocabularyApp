@@ -2,7 +2,7 @@ const vocabularyData = [
   {
     "id": "1",
     "category": "Cuộc sống",
-    "vi": "phanh (xe)",
+    "vn": "phanh (xe)",
     "jp": "ブレーキ",
     "kana": "ぶれーき",
     "en": "brake",
@@ -10,20 +10,20 @@ const vocabularyData = [
     "cn": "刹车",
     "pinyin": "shāchē",
     "ko": "브레이크",
-    "koreanReading": "beureikeu",
+    "koread": "beureikeu",
+    "example_vi": "Hãy đạp phanh.",
+    "example_ja": "ブレーキをかけてください。",
+    "example_en": "Please apply the brake.",
+    "example_cn": "请踩刹车。",
+    "example_ko": "브레이크를 밟아 주세요.",
     "note": "",
-    "examples": {
-      "vi": "Hãy đạp phanh.",
-      "jp": "ブレーキをかけてください。",
-      "en": "Please apply the brake.",
-      "cn": "请踩刹车。",
-      "ko": "브레이크를 밟아 주세요."
-    }
+    "audio_word": "audio/1_word.mp3",
+    "audio_example": "audio/1_example.mp3"
   },
   {
     "id": "2",
     "category": "Du lịch",
-    "vi": "sân bay",
+    "vn": "sân bay",
     "jp": "空港",
     "kana": "くうこう",
     "en": "airport",
@@ -31,20 +31,20 @@ const vocabularyData = [
     "cn": "机场",
     "pinyin": "jīchǎng",
     "ko": "공항",
-    "koreanReading": "gonghang",
+    "koread": "gonghang",
+    "example_vi": "Tôi đi đến sân bay.",
+    "example_ja": "空港へ行きます。",
+    "example_en": "I go to the airport.",
+    "example_cn": "我去机场。",
+    "example_ko": "공항에 갑니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đi đến sân bay.",
-      "jp": "空港へ行きます。",
-      "en": "I go to the airport.",
-      "cn": "我去机场。",
-      "ko": "공항에 갑니다."
-    }
+    "audio_word": "audio/2_word.mp3",
+    "audio_example": "audio/2_example.mp3"
   },
   {
     "id": "3",
     "category": "Cuộc sống",
-    "vi": "gia đình",
+    "vn": "gia đình",
     "jp": "家族",
     "kana": "かぞく",
     "en": "family",
@@ -52,20 +52,20 @@ const vocabularyData = [
     "cn": "家人",
     "pinyin": "jiārén",
     "ko": "가족",
-    "koreanReading": "gajok",
+    "koread": "gajok",
+    "example_vi": "Đây là gia đình tôi.",
+    "example_ja": "これは私の家族です。",
+    "example_en": "This is my family.",
+    "example_cn": "这是我的家人。",
+    "example_ko": "이것은 제 가족입니다.",
     "note": "",
-    "examples": {
-      "vi": "Đây là gia đình tôi.",
-      "jp": "これは私の家族です。",
-      "en": "This is my family.",
-      "cn": "这是我的家人。",
-      "ko": "이것은 제 가족입니다."
-    }
+    "audio_word": "audio/3_word.mp3",
+    "audio_example": "audio/3_example.mp3"
   },
   {
     "id": "4",
     "category": "Du lịch",
-    "vi": "khách sạn",
+    "vn": "khách sạn",
     "jp": "ホテル",
     "kana": "ほてる",
     "en": "hotel",
@@ -73,20 +73,20 @@ const vocabularyData = [
     "cn": "酒店",
     "pinyin": "jiǔdiàn",
     "ko": "호텔",
-    "koreanReading": "hotel",
+    "koread": "hotel",
+    "example_vi": "Tôi đã đặt khách sạn.",
+    "example_ja": "ホテルを予約しました。",
+    "example_en": "I booked a hotel.",
+    "example_cn": "我预订了酒店。",
+    "example_ko": "호텔을 예약했습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đã đặt khách sạn.",
-      "jp": "ホテルを予約しました。",
-      "en": "I booked a hotel.",
-      "cn": "我预订了酒店。",
-      "ko": "호텔을 예약했습니다."
-    }
+    "audio_word": "audio/4_word.mp3",
+    "audio_example": "audio/4_example.mp3"
   },
   {
     "id": "5",
     "category": "Công việc",
-    "vi": "cuộc họp",
+    "vn": "cuộc họp",
     "jp": "会議",
     "kana": "かいぎ",
     "en": "meeting",
@@ -94,20 +94,20 @@ const vocabularyData = [
     "cn": "会议",
     "pinyin": "huìyì",
     "ko": "회의",
-    "koreanReading": "hoeui",
+    "koread": "hoeui",
+    "example_vi": "Tôi có cuộc họp lúc 9 giờ.",
+    "example_ja": "9時に会議があります。",
+    "example_en": "I have a meeting at nine.",
+    "example_cn": "我九点有会议。",
+    "example_ko": "저는 9시에 회의가 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi có cuộc họp lúc 9 giờ.",
-      "jp": "9時に会議があります。",
-      "en": "I have a meeting at nine.",
-      "cn": "我九点有会议。",
-      "ko": "저는 9시에 회의가 있습니다."
-    }
+    "audio_word": "audio/5_word.mp3",
+    "audio_example": "audio/5_example.mp3"
   },
   {
     "id": "6",
     "category": "Gia đình",
-    "vi": "gia đình",
+    "vn": "gia đình",
     "jp": "家族",
     "kana": "かぞく",
     "en": "family",
@@ -115,20 +115,20 @@ const vocabularyData = [
     "cn": "家人",
     "pinyin": "jiārén",
     "ko": "가족",
-    "koreanReading": "gajok",
+    "koread": "gajok",
+    "example_vi": "Đây là gia đình tôi.",
+    "example_ja": "これは私の家族です。",
+    "example_en": "This is my family.",
+    "example_cn": "这是我的家人。",
+    "example_ko": "이것은 제 가족입니다。",
     "note": "",
-    "examples": {
-      "vi": "Đây là gia đình tôi.",
-      "jp": "これは私の家族です。",
-      "en": "This is my family.",
-      "cn": "这是我的家人。",
-      "ko": "이것은 제 가족입니다。"
-    }
+    "audio_word": "audio/6_word.mp3",
+    "audio_example": "audio/6_example.mp3"
   },
   {
     "id": "7",
     "category": "Gia đình",
-    "vi": "bố",
+    "vn": "bố",
     "jp": "父",
     "kana": "ちち",
     "en": "father",
@@ -136,20 +136,20 @@ const vocabularyData = [
     "cn": "爸爸",
     "pinyin": "bàba",
     "ko": "아버지",
-    "koreanReading": "abeoji",
+    "koread": "abeoji",
+    "example_vi": "Bố tôi rất vui tính.",
+    "example_ja": "父はとても明るいです。",
+    "example_en": "My father is very cheerful.",
+    "example_cn": "我爸爸很开朗。",
+    "example_ko": "아버지는 아주 밝으십니다。",
     "note": "",
-    "examples": {
-      "vi": "Bố tôi rất vui tính.",
-      "jp": "父はとても明るいです。",
-      "en": "My father is very cheerful.",
-      "cn": "我爸爸很开朗。",
-      "ko": "아버지는 아주 밝으십니다。"
-    }
+    "audio_word": "audio/7_word.mp3",
+    "audio_example": "audio/7_example.mp3"
   },
   {
     "id": "8",
     "category": "Gia đình",
-    "vi": "mẹ",
+    "vn": "mẹ",
     "jp": "母",
     "kana": "はは",
     "en": "mother",
@@ -157,20 +157,20 @@ const vocabularyData = [
     "cn": "妈妈",
     "pinyin": "māma",
     "ko": "어머니",
-    "koreanReading": "eomeoni",
+    "koread": "eomeoni",
+    "example_vi": "Mẹ tôi nấu ăn rất ngon.",
+    "example_ja": "母は料理がとても上手です。",
+    "example_en": "My mother cooks very well.",
+    "example_cn": "我妈妈做饭很好吃。",
+    "example_ko": "어머니는 요리를 아주 잘하십니다。",
     "note": "",
-    "examples": {
-      "vi": "Mẹ tôi nấu ăn rất ngon.",
-      "jp": "母は料理がとても上手です。",
-      "en": "My mother cooks very well.",
-      "cn": "我妈妈做饭很好吃。",
-      "ko": "어머니는 요리를 아주 잘하십니다。"
-    }
+    "audio_word": "audio/8_word.mp3",
+    "audio_example": "audio/8_example.mp3"
   },
   {
     "id": "9",
     "category": "Gia đình",
-    "vi": "anh trai",
+    "vn": "anh trai",
     "jp": "兄",
     "kana": "あに",
     "en": "older brother",
@@ -178,20 +178,20 @@ const vocabularyData = [
     "cn": "哥哥",
     "pinyin": "gēge",
     "ko": "형",
-    "koreanReading": "hyeong",
+    "koread": "hyeong",
+    "example_vi": "Anh trai tôi thích thể thao.",
+    "example_ja": "兄はスポーツが好きです。",
+    "example_en": "My older brother likes sports.",
+    "example_cn": "我哥哥喜欢运动。",
+    "example_ko": "형은 운동을 좋아합니다。",
     "note": "",
-    "examples": {
-      "vi": "Anh trai tôi thích thể thao.",
-      "jp": "兄はスポーツが好きです。",
-      "en": "My older brother likes sports.",
-      "cn": "我哥哥喜欢运动。",
-      "ko": "형은 운동을 좋아합니다。"
-    }
+    "audio_word": "audio/9_word.mp3",
+    "audio_example": "audio/9_example.mp3"
   },
   {
     "id": "10",
     "category": "Gia đình",
-    "vi": "chị gái",
+    "vn": "chị gái",
     "jp": "姉",
     "kana": "あね",
     "en": "older sister",
@@ -199,20 +199,20 @@ const vocabularyData = [
     "cn": "姐姐",
     "pinyin": "jiějie",
     "ko": "누나",
-    "koreanReading": "nuna",
+    "koread": "nuna",
+    "example_vi": "Chị gái tôi hay cười.",
+    "example_ja": "姉はよく笑います。",
+    "example_en": "My older sister smiles a lot.",
+    "example_cn": "我姐姐常常笑。",
+    "example_ko": "누나는 자주 웃습니다。",
     "note": "",
-    "examples": {
-      "vi": "Chị gái tôi hay cười.",
-      "jp": "姉はよく笑います。",
-      "en": "My older sister smiles a lot.",
-      "cn": "我姐姐常常笑。",
-      "ko": "누나는 자주 웃습니다。"
-    }
+    "audio_word": "audio/10_word.mp3",
+    "audio_example": "audio/10_example.mp3"
   },
   {
     "id": "11",
     "category": "Gia đình",
-    "vi": "em trai",
+    "vn": "em trai",
     "jp": "弟",
     "kana": "おとうと",
     "en": "younger brother",
@@ -220,20 +220,20 @@ const vocabularyData = [
     "cn": "弟弟",
     "pinyin": "dìdi",
     "ko": "남동생",
-    "koreanReading": "namdongsaeng",
+    "koread": "namdongsaeng",
+    "example_vi": "Em trai tôi rất khỏe.",
+    "example_ja": "弟はとても元気です。",
+    "example_en": "My younger brother is very energetic.",
+    "example_cn": "我弟弟很有精神。",
+    "example_ko": "남동생은 아주 활기찹니다。",
     "note": "",
-    "examples": {
-      "vi": "Em trai tôi rất khỏe.",
-      "jp": "弟はとても元気です。",
-      "en": "My younger brother is very energetic.",
-      "cn": "我弟弟很有精神。",
-      "ko": "남동생은 아주 활기찹니다。"
-    }
+    "audio_word": "audio/11_word.mp3",
+    "audio_example": "audio/11_example.mp3"
   },
   {
     "id": "12",
     "category": "Gia đình",
-    "vi": "em gái",
+    "vn": "em gái",
     "jp": "妹",
     "kana": "いもうと",
     "en": "younger sister",
@@ -241,20 +241,20 @@ const vocabularyData = [
     "cn": "妹妹",
     "pinyin": "mèimei",
     "ko": "여동생",
-    "koreanReading": "yeodongsaeng",
+    "koread": "yeodongsaeng",
+    "example_vi": "Em gái tôi thích hát.",
+    "example_ja": "妹は歌うことが好きです。",
+    "example_en": "My younger sister likes singing.",
+    "example_cn": "我妹妹喜欢唱歌。",
+    "example_ko": "여동생은 노래하는 것을 좋아합니다。",
     "note": "",
-    "examples": {
-      "vi": "Em gái tôi thích hát.",
-      "jp": "妹は歌うことが好きです。",
-      "en": "My younger sister likes singing.",
-      "cn": "我妹妹喜欢唱歌。",
-      "ko": "여동생은 노래하는 것을 좋아합니다。"
-    }
+    "audio_word": "audio/12_word.mp3",
+    "audio_example": "audio/12_example.mp3"
   },
   {
     "id": "13",
     "category": "Gia đình",
-    "vi": "ông",
+    "vn": "ông",
     "jp": "祖父",
     "kana": "そふ",
     "en": "grandfather",
@@ -262,20 +262,20 @@ const vocabularyData = [
     "cn": "爷爷",
     "pinyin": "yéye",
     "ko": "할아버지",
-    "koreanReading": "harabeoji",
+    "koread": "harabeoji",
+    "example_vi": "Ông tôi kể chuyện rất hay.",
+    "example_ja": "祖父は話がとても上手です。",
+    "example_en": "My grandfather tells great stories.",
+    "example_cn": "我爷爷讲故事很好。",
+    "example_ko": "할아버지는 이야기를 아주 잘하십니다。",
     "note": "",
-    "examples": {
-      "vi": "Ông tôi kể chuyện rất hay.",
-      "jp": "祖父は話がとても上手です。",
-      "en": "My grandfather tells great stories.",
-      "cn": "我爷爷讲故事很好。",
-      "ko": "할아버지는 이야기를 아주 잘하십니다。"
-    }
+    "audio_word": "audio/13_word.mp3",
+    "audio_example": "audio/13_example.mp3"
   },
   {
     "id": "14",
     "category": "Gia đình",
-    "vi": "bà",
+    "vn": "bà",
     "jp": "祖母",
     "kana": "そぼ",
     "en": "grandmother",
@@ -283,20 +283,20 @@ const vocabularyData = [
     "cn": "奶奶",
     "pinyin": "nǎinai",
     "ko": "할머니",
-    "koreanReading": "halmeoni",
+    "koread": "halmeoni",
+    "example_vi": "Bà tôi rất hiền.",
+    "example_ja": "祖母はとても優しいです。",
+    "example_en": "My grandmother is very kind.",
+    "example_cn": "我奶奶很温柔。",
+    "example_ko": "할머니는 아주 다정하십니다。",
     "note": "",
-    "examples": {
-      "vi": "Bà tôi rất hiền.",
-      "jp": "祖母はとても優しいです。",
-      "en": "My grandmother is very kind.",
-      "cn": "我奶奶很温柔。",
-      "ko": "할머니는 아주 다정하십니다。"
-    }
+    "audio_word": "audio/14_word.mp3",
+    "audio_example": "audio/14_example.mp3"
   },
   {
     "id": "15",
     "category": "Gia đình",
-    "vi": "con",
+    "vn": "con",
     "jp": "子ども",
     "kana": "こども",
     "en": "child",
@@ -304,20 +304,20 @@ const vocabularyData = [
     "cn": "孩子",
     "pinyin": "háizi",
     "ko": "아이",
-    "koreanReading": "ai",
+    "koread": "ai",
+    "example_vi": "Con tôi cười rất đáng yêu.",
+    "example_ja": "子どもはとてもかわいく笑います。",
+    "example_en": "My child smiles very cutely.",
+    "example_cn": "我的孩子笑得很可爱。",
+    "example_ko": "아이는 아주 귀엽게 웃습니다。",
     "note": "",
-    "examples": {
-      "vi": "Con tôi cười rất đáng yêu.",
-      "jp": "子どもはとてもかわいく笑います。",
-      "en": "My child smiles very cutely.",
-      "cn": "我的孩子笑得很可爱。",
-      "ko": "아이는 아주 귀엽게 웃습니다。"
-    }
+    "audio_word": "audio/15_word.mp3",
+    "audio_example": "audio/15_example.mp3"
   },
   {
     "id": "16",
     "category": "Du lịch",
-    "vi": "ga tàu",
+    "vn": "ga tàu",
     "jp": "駅",
     "kana": "えき",
     "en": "station",
@@ -325,20 +325,20 @@ const vocabularyData = [
     "cn": "车站",
     "pinyin": "chēzhàn",
     "ko": "역",
-    "koreanReading": "yeok",
+    "koread": "yeok",
+    "example_vi": "Tôi đang ở ga tàu.",
+    "example_ja": "私は駅にいます。",
+    "example_en": "I am at the station.",
+    "example_cn": "我在车站。",
+    "example_ko": "저는 역에 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đang ở ga tàu.",
-      "jp": "私は駅にいます。",
-      "en": "I am at the station.",
-      "cn": "我在车站。",
-      "ko": "저는 역에 있습니다."
-    }
+    "audio_word": "audio/16_word.mp3",
+    "audio_example": "audio/16_example.mp3"
   },
   {
     "id": "17",
     "category": "Du lịch",
-    "vi": "vé",
+    "vn": "vé",
     "jp": "切符",
     "kana": "きっぷ",
     "en": "ticket",
@@ -346,20 +346,20 @@ const vocabularyData = [
     "cn": "票",
     "pinyin": "piào",
     "ko": "표",
-    "koreanReading": "pyo",
+    "koread": "pyo",
+    "example_vi": "Tôi đã mua vé.",
+    "example_ja": "切符を買いました。",
+    "example_en": "I bought a ticket.",
+    "example_cn": "我买了票。",
+    "example_ko": "표를 샀습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đã mua vé.",
-      "jp": "切符を買いました。",
-      "en": "I bought a ticket.",
-      "cn": "我买了票。",
-      "ko": "표를 샀습니다."
-    }
+    "audio_word": "audio/17_word.mp3",
+    "audio_example": "audio/17_example.mp3"
   },
   {
     "id": "18",
     "category": "Du lịch",
-    "vi": "tàu điện",
+    "vn": "tàu điện",
     "jp": "電車",
     "kana": "でんしゃ",
     "en": "train",
@@ -367,20 +367,20 @@ const vocabularyData = [
     "cn": "火车",
     "pinyin": "huǒchē",
     "ko": "기차",
-    "koreanReading": "gicha",
+    "koread": "gicha",
+    "example_vi": "Tôi đi tàu điện.",
+    "example_ja": "電車で行きます。",
+    "example_en": "I go by train.",
+    "example_cn": "我坐火车去。",
+    "example_ko": "기차로 갑니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đi tàu điện.",
-      "jp": "電車で行きます。",
-      "en": "I go by train.",
-      "cn": "我坐火车去。",
-      "ko": "기차로 갑니다."
-    }
+    "audio_word": "audio/18_word.mp3",
+    "audio_example": "audio/18_example.mp3"
   },
   {
     "id": "19",
     "category": "Du lịch",
-    "vi": "xe buýt",
+    "vn": "xe buýt",
     "jp": "バス",
     "kana": "ばす",
     "en": "bus",
@@ -388,20 +388,20 @@ const vocabularyData = [
     "cn": "公交车",
     "pinyin": "gōngjiāochē",
     "ko": "버스",
-    "koreanReading": "beoseu",
+    "koread": "beoseu",
+    "example_vi": "Tôi đi xe buýt.",
+    "example_ja": "バスで行きます。",
+    "example_en": "I go by bus.",
+    "example_cn": "我坐公交车去。",
+    "example_ko": "버스로 갑니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đi xe buýt.",
-      "jp": "バスで行きます。",
-      "en": "I go by bus.",
-      "cn": "我坐公交车去。",
-      "ko": "버스로 갑니다."
-    }
+    "audio_word": "audio/19_word.mp3",
+    "audio_example": "audio/19_example.mp3"
   },
   {
     "id": "20",
     "category": "Du lịch",
-    "vi": "bản đồ",
+    "vn": "bản đồ",
     "jp": "地図",
     "kana": "ちず",
     "en": "map",
@@ -409,20 +409,20 @@ const vocabularyData = [
     "cn": "地图",
     "pinyin": "dìtú",
     "ko": "지도",
-    "koreanReading": "jido",
+    "koread": "jido",
+    "example_vi": "Bản đồ rất hữu ích.",
+    "example_ja": "地図は便利です。",
+    "example_en": "The map is useful.",
+    "example_cn": "地图很有用。",
+    "example_ko": "지도는 유용합니다.",
     "note": "",
-    "examples": {
-      "vi": "Bản đồ rất hữu ích.",
-      "jp": "地図は便利です。",
-      "en": "The map is useful.",
-      "cn": "地图很有用。",
-      "ko": "지도는 유용합니다."
-    }
+    "audio_word": "audio/20_word.mp3",
+    "audio_example": "audio/20_example.mp3"
   },
   {
     "id": "21",
     "category": "Du lịch",
-    "vi": "hành lý",
+    "vn": "hành lý",
     "jp": "荷物",
     "kana": "にもつ",
     "en": "luggage",
@@ -430,20 +430,20 @@ const vocabularyData = [
     "cn": "行李",
     "pinyin": "xíngli",
     "ko": "짐",
-    "koreanReading": "jim",
+    "koread": "jim",
+    "example_vi": "Hành lý của tôi ở đây.",
+    "example_ja": "荷物はここです。",
+    "example_en": "My luggage is here.",
+    "example_cn": "我的行李在这里。",
+    "example_ko": "제 짐은 여기 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Hành lý của tôi ở đây.",
-      "jp": "荷物はここです。",
-      "en": "My luggage is here.",
-      "cn": "我的行李在这里。",
-      "ko": "제 짐은 여기 있습니다."
-    }
+    "audio_word": "audio/21_word.mp3",
+    "audio_example": "audio/21_example.mp3"
   },
   {
     "id": "22",
     "category": "Du lịch",
-    "vi": "hộ chiếu",
+    "vn": "hộ chiếu",
     "jp": "パスポート",
     "kana": "ぱすぽーと",
     "en": "passport",
@@ -451,20 +451,20 @@ const vocabularyData = [
     "cn": "护照",
     "pinyin": "hùzhào",
     "ko": "여권",
-    "koreanReading": "yeogwon",
+    "koread": "yeogwon",
+    "example_vi": "Tôi mang theo hộ chiếu.",
+    "example_ja": "パスポートを持っています。",
+    "example_en": "I have my passport.",
+    "example_cn": "我带着护照。",
+    "example_ko": "여권을 가지고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi mang theo hộ chiếu.",
-      "jp": "パスポートを持っています。",
-      "en": "I have my passport.",
-      "cn": "我带着护照。",
-      "ko": "여권을 가지고 있습니다."
-    }
+    "audio_word": "audio/22_word.mp3",
+    "audio_example": "audio/22_example.mp3"
   },
   {
     "id": "23",
     "category": "Du lịch",
-    "vi": "ảnh",
+    "vn": "ảnh",
     "jp": "写真",
     "kana": "しゃしん",
     "en": "photo",
@@ -472,20 +472,20 @@ const vocabularyData = [
     "cn": "照片",
     "pinyin": "zhàopiàn",
     "ko": "사진",
-    "koreanReading": "sajin",
+    "koread": "sajin",
+    "example_vi": "Tôi chụp một bức ảnh.",
+    "example_ja": "写真を撮ります。",
+    "example_en": "I take a photo.",
+    "example_cn": "我拍照片。",
+    "example_ko": "사진을 찍습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi chụp một bức ảnh.",
-      "jp": "写真を撮ります。",
-      "en": "I take a photo.",
-      "cn": "我拍照片。",
-      "ko": "사진을 찍습니다."
-    }
+    "audio_word": "audio/23_word.mp3",
+    "audio_example": "audio/23_example.mp3"
   },
   {
     "id": "24",
     "category": "Du lịch",
-    "vi": "công viên",
+    "vn": "công viên",
     "jp": "公園",
     "kana": "こうえん",
     "en": "park",
@@ -493,20 +493,20 @@ const vocabularyData = [
     "cn": "公园",
     "pinyin": "gōngyuán",
     "ko": "공원",
-    "koreanReading": "gongwon",
+    "koread": "gongwon",
+    "example_vi": "Chúng tôi đi công viên.",
+    "example_ja": "公園へ行きます。",
+    "example_en": "We go to the park.",
+    "example_cn": "我们去公园。",
+    "example_ko": "우리는 공원에 갑니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng tôi đi công viên.",
-      "jp": "公園へ行きます。",
-      "en": "We go to the park.",
-      "cn": "我们去公园。",
-      "ko": "우리는 공원에 갑니다."
-    }
+    "audio_word": "audio/24_word.mp3",
+    "audio_example": "audio/24_example.mp3"
   },
   {
     "id": "25",
     "category": "Du lịch",
-    "vi": "du lịch",
+    "vn": "du lịch",
     "jp": "旅行",
     "kana": "りょこう",
     "en": "travel",
@@ -514,20 +514,20 @@ const vocabularyData = [
     "cn": "旅行",
     "pinyin": "lǚxíng",
     "ko": "여행",
-    "koreanReading": "yeohaeng",
+    "koread": "yeohaeng",
+    "example_vi": "Tôi thích đi du lịch.",
+    "example_ja": "旅行が好きです。",
+    "example_en": "I like to travel.",
+    "example_cn": "我喜欢旅行。",
+    "example_ko": "저는 여행을 좋아합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi thích đi du lịch.",
-      "jp": "旅行が好きです。",
-      "en": "I like to travel.",
-      "cn": "我喜欢旅行。",
-      "ko": "저는 여행을 좋아합니다."
-    }
+    "audio_word": "audio/25_word.mp3",
+    "audio_example": "audio/25_example.mp3"
   },
   {
     "id": "26",
     "category": "Mua sắm",
-    "vi": "cửa hàng",
+    "vn": "cửa hàng",
     "jp": "店",
     "kana": "みせ",
     "en": "store",
@@ -535,20 +535,20 @@ const vocabularyData = [
     "cn": "商店",
     "pinyin": "shāngdiàn",
     "ko": "가게",
-    "koreanReading": "gage",
+    "koread": "gage",
+    "example_vi": "Tôi vào cửa hàng.",
+    "example_ja": "店に入ります。",
+    "example_en": "I go into the store.",
+    "example_cn": "我走进商店。",
+    "example_ko": "가게에 들어갑니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi vào cửa hàng.",
-      "jp": "店に入ります。",
-      "en": "I go into the store.",
-      "cn": "我走进商店。",
-      "ko": "가게에 들어갑니다."
-    }
+    "audio_word": "audio/26_word.mp3",
+    "audio_example": "audio/26_example.mp3"
   },
   {
     "id": "27",
     "category": "Mua sắm",
-    "vi": "tiền",
+    "vn": "tiền",
     "jp": "お金",
     "kana": "おかね",
     "en": "money",
@@ -556,20 +556,20 @@ const vocabularyData = [
     "cn": "钱",
     "pinyin": "qián",
     "ko": "돈",
-    "koreanReading": "don",
+    "koread": "don",
+    "example_vi": "Tôi có đủ tiền.",
+    "example_ja": "お金があります。",
+    "example_en": "I have enough money.",
+    "example_cn": "我有足够的钱。",
+    "example_ko": "돈이 충분합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi có đủ tiền.",
-      "jp": "お金があります。",
-      "en": "I have enough money.",
-      "cn": "我有足够的钱。",
-      "ko": "돈이 충분합니다."
-    }
+    "audio_word": "audio/27_word.mp3",
+    "audio_example": "audio/27_example.mp3"
   },
   {
     "id": "28",
     "category": "Mua sắm",
-    "vi": "giá cả",
+    "vn": "giá cả",
     "jp": "値段",
     "kana": "ねだん",
     "en": "price",
@@ -577,20 +577,20 @@ const vocabularyData = [
     "cn": "价格",
     "pinyin": "jiàgé",
     "ko": "가격",
-    "koreanReading": "gagyeok",
+    "koread": "gagyeok",
+    "example_vi": "Giá này rất tốt.",
+    "example_ja": "この値段は安いです。",
+    "example_en": "This price is good.",
+    "example_cn": "这个价格很好。",
+    "example_ko": "이 가격은 좋습니다.",
     "note": "",
-    "examples": {
-      "vi": "Giá này rất tốt.",
-      "jp": "この値段は安いです。",
-      "en": "This price is good.",
-      "cn": "这个价格很好。",
-      "ko": "이 가격은 좋습니다."
-    }
+    "audio_word": "audio/28_word.mp3",
+    "audio_example": "audio/28_example.mp3"
   },
   {
     "id": "29",
     "category": "Mua sắm",
-    "vi": "giảm giá",
+    "vn": "giảm giá",
     "jp": "割引",
     "kana": "わりびき",
     "en": "discount",
@@ -598,20 +598,20 @@ const vocabularyData = [
     "cn": "折扣",
     "pinyin": "zhékòu",
     "ko": "할인",
-    "koreanReading": "harin",
+    "koread": "harin",
+    "example_vi": "Hôm nay có giảm giá.",
+    "example_ja": "今日は割引があります。",
+    "example_en": "There is a discount today.",
+    "example_cn": "今天有折扣。",
+    "example_ko": "오늘은 할인이 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Hôm nay có giảm giá.",
-      "jp": "今日は割引があります。",
-      "en": "There is a discount today.",
-      "cn": "今天有折扣。",
-      "ko": "오늘은 할인이 있습니다."
-    }
+    "audio_word": "audio/29_word.mp3",
+    "audio_example": "audio/29_example.mp3"
   },
   {
     "id": "30",
     "category": "Mua sắm",
-    "vi": "hóa đơn",
+    "vn": "hóa đơn",
     "jp": "レシート",
     "kana": "れしーと",
     "en": "receipt",
@@ -619,20 +619,20 @@ const vocabularyData = [
     "cn": "收据",
     "pinyin": "shōujù",
     "ko": "영수증",
-    "koreanReading": "yeongsujeung",
+    "koread": "yeongsujeung",
+    "example_vi": "Tôi giữ hóa đơn.",
+    "example_ja": "レシートを持っています。",
+    "example_en": "I keep the receipt.",
+    "example_cn": "我留着收据。",
+    "example_ko": "영수증을 가지고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi giữ hóa đơn.",
-      "jp": "レシートを持っています。",
-      "en": "I keep the receipt.",
-      "cn": "我留着收据。",
-      "ko": "영수증을 가지고 있습니다."
-    }
+    "audio_word": "audio/30_word.mp3",
+    "audio_example": "audio/30_example.mp3"
   },
   {
     "id": "31",
     "category": "Mua sắm",
-    "vi": "thẻ",
+    "vn": "thẻ",
     "jp": "カード",
     "kana": "かーど",
     "en": "card",
@@ -640,20 +640,20 @@ const vocabularyData = [
     "cn": "卡",
     "pinyin": "kǎ",
     "ko": "카드",
-    "koreanReading": "kadeu",
+    "koread": "kadeu",
+    "example_vi": "Tôi trả bằng thẻ.",
+    "example_ja": "カードで払います。",
+    "example_en": "I pay by card.",
+    "example_cn": "我用卡付款。",
+    "example_ko": "카드로 계산합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi trả bằng thẻ.",
-      "jp": "カードで払います。",
-      "en": "I pay by card.",
-      "cn": "我用卡付款。",
-      "ko": "카드로 계산합니다."
-    }
+    "audio_word": "audio/31_word.mp3",
+    "audio_example": "audio/31_example.mp3"
   },
   {
     "id": "32",
     "category": "Mua sắm",
-    "vi": "tiền mặt",
+    "vn": "tiền mặt",
     "jp": "現金",
     "kana": "げんきん",
     "en": "cash",
@@ -661,20 +661,20 @@ const vocabularyData = [
     "cn": "现金",
     "pinyin": "xiànjīn",
     "ko": "현금",
-    "koreanReading": "hyeongeum",
+    "koread": "hyeongeum",
+    "example_vi": "Tôi có tiền mặt.",
+    "example_ja": "現金があります。",
+    "example_en": "I have cash.",
+    "example_cn": "我有现金。",
+    "example_ko": "현금이 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi có tiền mặt.",
-      "jp": "現金があります。",
-      "en": "I have cash.",
-      "cn": "我有现金。",
-      "ko": "현금이 있습니다."
-    }
+    "audio_word": "audio/32_word.mp3",
+    "audio_example": "audio/32_example.mp3"
   },
   {
     "id": "33",
     "category": "Mua sắm",
-    "vi": "túi",
+    "vn": "túi",
     "jp": "袋",
     "kana": "ふくろ",
     "en": "bag",
@@ -682,20 +682,20 @@ const vocabularyData = [
     "cn": "袋子",
     "pinyin": "dàizi",
     "ko": "봉투",
-    "koreanReading": "bongtu",
+    "koread": "bongtu",
+    "example_vi": "Tôi cần một cái túi.",
+    "example_ja": "袋をください。",
+    "example_en": "I need a bag.",
+    "example_cn": "请给我一个袋子。",
+    "example_ko": "봉투 하나 주세요.",
     "note": "",
-    "examples": {
-      "vi": "Tôi cần một cái túi.",
-      "jp": "袋をください。",
-      "en": "I need a bag.",
-      "cn": "请给我一个袋子。",
-      "ko": "봉투 하나 주세요."
-    }
+    "audio_word": "audio/33_word.mp3",
+    "audio_example": "audio/33_example.mp3"
   },
   {
     "id": "34",
     "category": "Mua sắm",
-    "vi": "quần áo",
+    "vn": "quần áo",
     "jp": "服",
     "kana": "ふく",
     "en": "clothes",
@@ -703,20 +703,20 @@ const vocabularyData = [
     "cn": "衣服",
     "pinyin": "yīfu",
     "ko": "옷",
-    "koreanReading": "ot",
+    "koread": "ot",
+    "example_vi": "Tôi thích quần áo này.",
+    "example_ja": "この服が好きです。",
+    "example_en": "I like these clothes.",
+    "example_cn": "我喜欢这件衣服。",
+    "example_ko": "이 옷이 마음에 듭니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi thích quần áo này.",
-      "jp": "この服が好きです。",
-      "en": "I like these clothes.",
-      "cn": "我喜欢这件衣服。",
-      "ko": "이 옷이 마음에 듭니다."
-    }
+    "audio_word": "audio/34_word.mp3",
+    "audio_example": "audio/34_example.mp3"
   },
   {
     "id": "35",
     "category": "Mua sắm",
-    "vi": "giày",
+    "vn": "giày",
     "jp": "靴",
     "kana": "くつ",
     "en": "shoes",
@@ -724,20 +724,20 @@ const vocabularyData = [
     "cn": "鞋",
     "pinyin": "xié",
     "ko": "신발",
-    "koreanReading": "sinbal",
+    "koread": "sinbal",
+    "example_vi": "Tôi muốn mua giày.",
+    "example_ja": "靴を買いたいです。",
+    "example_en": "I want to buy shoes.",
+    "example_cn": "我想买鞋。",
+    "example_ko": "신발을 사고 싶습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi muốn mua giày.",
-      "jp": "靴を買いたいです。",
-      "en": "I want to buy shoes.",
-      "cn": "我想买鞋。",
-      "ko": "신발을 사고 싶습니다."
-    }
+    "audio_word": "audio/35_word.mp3",
+    "audio_example": "audio/35_example.mp3"
   },
   {
     "id": "36",
     "category": "Thời tiết",
-    "vi": "trời",
+    "vn": "trời",
     "jp": "空",
     "kana": "そら",
     "en": "sky",
@@ -745,20 +745,20 @@ const vocabularyData = [
     "cn": "天空",
     "pinyin": "tiānkōng",
     "ko": "하늘",
-    "koreanReading": "haneul",
+    "koread": "haneul",
+    "example_vi": "Bầu trời rất đẹp.",
+    "example_ja": "空がきれいです。",
+    "example_en": "The sky is beautiful.",
+    "example_cn": "天空很美。",
+    "example_ko": "하늘이 아름답습니다.",
     "note": "",
-    "examples": {
-      "vi": "Bầu trời rất đẹp.",
-      "jp": "空がきれいです。",
-      "en": "The sky is beautiful.",
-      "cn": "天空很美。",
-      "ko": "하늘이 아름답습니다."
-    }
+    "audio_word": "audio/36_word.mp3",
+    "audio_example": "audio/36_example.mp3"
   },
   {
     "id": "37",
     "category": "Thời tiết",
-    "vi": "mặt trời",
+    "vn": "mặt trời",
     "jp": "太陽",
     "kana": "たいよう",
     "en": "sun",
@@ -766,20 +766,20 @@ const vocabularyData = [
     "cn": "太阳",
     "pinyin": "tàiyáng",
     "ko": "태양",
-    "koreanReading": "taeyang",
+    "koread": "taeyang",
+    "example_vi": "Mặt trời đang chiếu sáng.",
+    "example_ja": "太陽が出ています。",
+    "example_en": "The sun is shining.",
+    "example_cn": "太阳出来了。",
+    "example_ko": "태양이 빛나고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Mặt trời đang chiếu sáng.",
-      "jp": "太陽が出ています。",
-      "en": "The sun is shining.",
-      "cn": "太阳出来了。",
-      "ko": "태양이 빛나고 있습니다."
-    }
+    "audio_word": "audio/37_word.mp3",
+    "audio_example": "audio/37_example.mp3"
   },
   {
     "id": "38",
     "category": "Thời tiết",
-    "vi": "mưa",
+    "vn": "mưa",
     "jp": "雨",
     "kana": "あめ",
     "en": "rain",
@@ -787,20 +787,20 @@ const vocabularyData = [
     "cn": "雨",
     "pinyin": "yǔ",
     "ko": "비",
-    "koreanReading": "bi",
+    "koread": "bi",
+    "example_vi": "Hôm nay có mưa.",
+    "example_ja": "今日は雨です。",
+    "example_en": "It is raining today.",
+    "example_cn": "今天下雨。",
+    "example_ko": "오늘은 비가 옵니다.",
     "note": "",
-    "examples": {
-      "vi": "Hôm nay có mưa.",
-      "jp": "今日は雨です。",
-      "en": "It is raining today.",
-      "cn": "今天下雨。",
-      "ko": "오늘은 비가 옵니다."
-    }
+    "audio_word": "audio/38_word.mp3",
+    "audio_example": "audio/38_example.mp3"
   },
   {
     "id": "39",
     "category": "Thời tiết",
-    "vi": "tuyết",
+    "vn": "tuyết",
     "jp": "雪",
     "kana": "ゆき",
     "en": "snow",
@@ -808,20 +808,20 @@ const vocabularyData = [
     "cn": "雪",
     "pinyin": "xuě",
     "ko": "눈",
-    "koreanReading": "nun",
+    "koread": "nun",
+    "example_vi": "Mùa đông có tuyết.",
+    "example_ja": "冬は雪が降ります。",
+    "example_en": "It snows in winter.",
+    "example_cn": "冬天下雪。",
+    "example_ko": "겨울에는 눈이 옵니다.",
     "note": "",
-    "examples": {
-      "vi": "Mùa đông có tuyết.",
-      "jp": "冬は雪が降ります。",
-      "en": "It snows in winter.",
-      "cn": "冬天下雪。",
-      "ko": "겨울에는 눈이 옵니다."
-    }
+    "audio_word": "audio/39_word.mp3",
+    "audio_example": "audio/39_example.mp3"
   },
   {
     "id": "40",
     "category": "Thời tiết",
-    "vi": "gió",
+    "vn": "gió",
     "jp": "風",
     "kana": "かぜ",
     "en": "wind",
@@ -829,20 +829,20 @@ const vocabularyData = [
     "cn": "风",
     "pinyin": "fēng",
     "ko": "바람",
-    "koreanReading": "baram",
+    "koread": "baram",
+    "example_vi": "Gió hôm nay rất mát.",
+    "example_ja": "今日は風が気持ちいいです。",
+    "example_en": "The wind feels nice today.",
+    "example_cn": "今天风很舒服。",
+    "example_ko": "오늘 바람이 시원합니다.",
     "note": "",
-    "examples": {
-      "vi": "Gió hôm nay rất mát.",
-      "jp": "今日は風が気持ちいいです。",
-      "en": "The wind feels nice today.",
-      "cn": "今天风很舒服。",
-      "ko": "오늘 바람이 시원합니다."
-    }
+    "audio_word": "audio/40_word.mp3",
+    "audio_example": "audio/40_example.mp3"
   },
   {
     "id": "41",
     "category": "Thời tiết",
-    "vi": "mây",
+    "vn": "mây",
     "jp": "雲",
     "kana": "くも",
     "en": "cloud",
@@ -850,20 +850,20 @@ const vocabularyData = [
     "cn": "云",
     "pinyin": "yún",
     "ko": "구름",
-    "koreanReading": "gureum",
+    "koread": "gureum",
+    "example_vi": "Có nhiều mây trên trời.",
+    "example_ja": "空に雲があります。",
+    "example_en": "There are clouds in the sky.",
+    "example_cn": "天上有云。",
+    "example_ko": "하늘에 구름이 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Có nhiều mây trên trời.",
-      "jp": "空に雲があります。",
-      "en": "There are clouds in the sky.",
-      "cn": "天上有云。",
-      "ko": "하늘에 구름이 있습니다."
-    }
+    "audio_word": "audio/41_word.mp3",
+    "audio_example": "audio/41_example.mp3"
   },
   {
     "id": "42",
     "category": "Thời tiết",
-    "vi": "nóng",
+    "vn": "nóng",
     "jp": "暑い",
     "kana": "あつい",
     "en": "hot",
@@ -871,20 +871,20 @@ const vocabularyData = [
     "cn": "热",
     "pinyin": "rè",
     "ko": "덥다",
-    "koreanReading": "deopda",
+    "koread": "deopda",
+    "example_vi": "Hôm nay rất nóng.",
+    "example_ja": "今日は暑いです。",
+    "example_en": "It is hot today.",
+    "example_cn": "今天很热。",
+    "example_ko": "오늘은 덥습니다.",
     "note": "",
-    "examples": {
-      "vi": "Hôm nay rất nóng.",
-      "jp": "今日は暑いです。",
-      "en": "It is hot today.",
-      "cn": "今天很热。",
-      "ko": "오늘은 덥습니다."
-    }
+    "audio_word": "audio/42_word.mp3",
+    "audio_example": "audio/42_example.mp3"
   },
   {
     "id": "43",
     "category": "Thời tiết",
-    "vi": "lạnh",
+    "vn": "lạnh",
     "jp": "寒い",
     "kana": "さむい",
     "en": "cold",
@@ -892,20 +892,20 @@ const vocabularyData = [
     "cn": "冷",
     "pinyin": "lěng",
     "ko": "춥다",
-    "koreanReading": "chupda",
+    "koread": "chupda",
+    "example_vi": "Hôm nay khá lạnh.",
+    "example_ja": "今日は寒いです。",
+    "example_en": "It is cold today.",
+    "example_cn": "今天很冷。",
+    "example_ko": "오늘은 춥습니다.",
     "note": "",
-    "examples": {
-      "vi": "Hôm nay khá lạnh.",
-      "jp": "今日は寒いです。",
-      "en": "It is cold today.",
-      "cn": "今天很冷。",
-      "ko": "오늘은 춥습니다."
-    }
+    "audio_word": "audio/43_word.mp3",
+    "audio_example": "audio/43_example.mp3"
   },
   {
     "id": "44",
     "category": "Thời tiết",
-    "vi": "ấm áp",
+    "vn": "ấm áp",
     "jp": "暖かい",
     "kana": "あたたかい",
     "en": "warm",
@@ -913,20 +913,20 @@ const vocabularyData = [
     "cn": "暖和",
     "pinyin": "nuǎnhuo",
     "ko": "따뜻하다",
-    "koreanReading": "ttatteuthada",
+    "koread": "ttatteuthada",
+    "example_vi": "Mùa xuân rất ấm áp.",
+    "example_ja": "春は暖かいです。",
+    "example_en": "Spring is warm.",
+    "example_cn": "春天很暖和。",
+    "example_ko": "봄은 따뜻합니다.",
     "note": "",
-    "examples": {
-      "vi": "Mùa xuân rất ấm áp.",
-      "jp": "春は暖かいです。",
-      "en": "Spring is warm.",
-      "cn": "春天很暖和。",
-      "ko": "봄은 따뜻합니다."
-    }
+    "audio_word": "audio/44_word.mp3",
+    "audio_example": "audio/44_example.mp3"
   },
   {
     "id": "45",
     "category": "Thời tiết",
-    "vi": "trong xanh",
+    "vn": "trong xanh",
     "jp": "晴れ",
     "kana": "はれ",
     "en": "sunny",
@@ -934,20 +934,20 @@ const vocabularyData = [
     "cn": "晴天",
     "pinyin": "qíngtiān",
     "ko": "맑다",
-    "koreanReading": "malgda",
+    "koread": "malgda",
+    "example_vi": "Hôm nay trời trong xanh.",
+    "example_ja": "今日は晴れです。",
+    "example_en": "It is sunny today.",
+    "example_cn": "今天是晴天。",
+    "example_ko": "오늘은 날씨가 맑습니다.",
     "note": "",
-    "examples": {
-      "vi": "Hôm nay trời trong xanh.",
-      "jp": "今日は晴れです。",
-      "en": "It is sunny today.",
-      "cn": "今天是晴天。",
-      "ko": "오늘은 날씨가 맑습니다."
-    }
+    "audio_word": "audio/45_word.mp3",
+    "audio_example": "audio/45_example.mp3"
   },
   {
     "id": "46",
     "category": "Động vật",
-    "vi": "chó",
+    "vn": "chó",
     "jp": "犬",
     "kana": "いぬ",
     "en": "dog",
@@ -955,20 +955,20 @@ const vocabularyData = [
     "cn": "狗",
     "pinyin": "gǒu",
     "ko": "개",
-    "koreanReading": "gae",
+    "koread": "gae",
+    "example_vi": "Con chó rất đáng yêu.",
+    "example_ja": "犬はとてもかわいいです。",
+    "example_en": "The dog is very cute.",
+    "example_cn": "这只狗很可爱。",
+    "example_ko": "강아지가 아주 귀엽습니다.",
     "note": "",
-    "examples": {
-      "vi": "Con chó rất đáng yêu.",
-      "jp": "犬はとてもかわいいです。",
-      "en": "The dog is very cute.",
-      "cn": "这只狗很可爱。",
-      "ko": "강아지가 아주 귀엽습니다."
-    }
+    "audio_word": "audio/46_word.mp3",
+    "audio_example": "audio/46_example.mp3"
   },
   {
     "id": "47",
     "category": "Động vật",
-    "vi": "mèo",
+    "vn": "mèo",
     "jp": "猫",
     "kana": "ねこ",
     "en": "cat",
@@ -976,20 +976,20 @@ const vocabularyData = [
     "cn": "猫",
     "pinyin": "māo",
     "ko": "고양이",
-    "koreanReading": "goyangi",
+    "koread": "goyangi",
+    "example_vi": "Con mèo đang ngủ.",
+    "example_ja": "猫は寝ています。",
+    "example_en": "The cat is sleeping.",
+    "example_cn": "猫在睡觉。",
+    "example_ko": "고양이가 자고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Con mèo đang ngủ.",
-      "jp": "猫は寝ています。",
-      "en": "The cat is sleeping.",
-      "cn": "猫在睡觉。",
-      "ko": "고양이가 자고 있습니다."
-    }
+    "audio_word": "audio/47_word.mp3",
+    "audio_example": "audio/47_example.mp3"
   },
   {
     "id": "48",
     "category": "Động vật",
-    "vi": "chim",
+    "vn": "chim",
     "jp": "鳥",
     "kana": "とり",
     "en": "bird",
@@ -997,20 +997,20 @@ const vocabularyData = [
     "cn": "鸟",
     "pinyin": "niǎo",
     "ko": "새",
-    "koreanReading": "sae",
+    "koread": "sae",
+    "example_vi": "Con chim đang hót.",
+    "example_ja": "鳥が鳴いています。",
+    "example_en": "The bird is singing.",
+    "example_cn": "鸟在唱歌。",
+    "example_ko": "새가 노래하고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Con chim đang hót.",
-      "jp": "鳥が鳴いています。",
-      "en": "The bird is singing.",
-      "cn": "鸟在唱歌。",
-      "ko": "새가 노래하고 있습니다."
-    }
+    "audio_word": "audio/48_word.mp3",
+    "audio_example": "audio/48_example.mp3"
   },
   {
     "id": "49",
     "category": "Động vật",
-    "vi": "cá",
+    "vn": "cá",
     "jp": "魚",
     "kana": "さかな",
     "en": "fish",
@@ -1018,20 +1018,20 @@ const vocabularyData = [
     "cn": "鱼",
     "pinyin": "yú",
     "ko": "물고기",
-    "koreanReading": "mulgogi",
+    "koread": "mulgogi",
+    "example_vi": "Con cá đang bơi.",
+    "example_ja": "魚が泳いでいます。",
+    "example_en": "The fish is swimming.",
+    "example_cn": "鱼在游泳。",
+    "example_ko": "물고기가 헤엄치고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Con cá đang bơi.",
-      "jp": "魚が泳いでいます。",
-      "en": "The fish is swimming.",
-      "cn": "鱼在游泳。",
-      "ko": "물고기가 헤엄치고 있습니다."
-    }
+    "audio_word": "audio/49_word.mp3",
+    "audio_example": "audio/49_example.mp3"
   },
   {
     "id": "50",
     "category": "Động vật",
-    "vi": "thỏ",
+    "vn": "thỏ",
     "jp": "兎",
     "kana": "うさぎ",
     "en": "rabbit",
@@ -1039,20 +1039,20 @@ const vocabularyData = [
     "cn": "兔子",
     "pinyin": "tùzi",
     "ko": "토끼",
-    "koreanReading": "tokki",
+    "koread": "tokki",
+    "example_vi": "Con thỏ chạy rất nhanh.",
+    "example_ja": "兎は速く走ります。",
+    "example_en": "The rabbit runs fast.",
+    "example_cn": "兔子跑得很快。",
+    "example_ko": "토끼가 빨리 달립니다.",
     "note": "",
-    "examples": {
-      "vi": "Con thỏ chạy rất nhanh.",
-      "jp": "兎は速く走ります。",
-      "en": "The rabbit runs fast.",
-      "cn": "兔子跑得很快。",
-      "ko": "토끼가 빨리 달립니다."
-    }
+    "audio_word": "audio/50_word.mp3",
+    "audio_example": "audio/50_example.mp3"
   },
   {
     "id": "51",
     "category": "Động vật",
-    "vi": "ngựa",
+    "vn": "ngựa",
     "jp": "馬",
     "kana": "うま",
     "en": "horse",
@@ -1060,20 +1060,20 @@ const vocabularyData = [
     "cn": "马",
     "pinyin": "mǎ",
     "ko": "말",
-    "koreanReading": "mal",
+    "koread": "mal",
+    "example_vi": "Con ngựa rất khỏe.",
+    "example_ja": "馬はとても元気です。",
+    "example_en": "The horse is very strong.",
+    "example_cn": "马很强壮。",
+    "example_ko": "말은 아주 튼튼합니다.",
     "note": "",
-    "examples": {
-      "vi": "Con ngựa rất khỏe.",
-      "jp": "馬はとても元気です。",
-      "en": "The horse is very strong.",
-      "cn": "马很强壮。",
-      "ko": "말은 아주 튼튼합니다."
-    }
+    "audio_word": "audio/51_word.mp3",
+    "audio_example": "audio/51_example.mp3"
   },
   {
     "id": "52",
     "category": "Động vật",
-    "vi": "bò",
+    "vn": "bò",
     "jp": "牛",
     "kana": "うし",
     "en": "cow",
@@ -1081,20 +1081,20 @@ const vocabularyData = [
     "cn": "牛",
     "pinyin": "niú",
     "ko": "소",
-    "koreanReading": "so",
+    "koread": "so",
+    "example_vi": "Con bò đang ăn cỏ.",
+    "example_ja": "牛は草を食べています。",
+    "example_en": "The cow is eating grass.",
+    "example_cn": "牛在吃草。",
+    "example_ko": "소가 풀을 먹고 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Con bò đang ăn cỏ.",
-      "jp": "牛は草を食べています。",
-      "en": "The cow is eating grass.",
-      "cn": "牛在吃草。",
-      "ko": "소가 풀을 먹고 있습니다."
-    }
+    "audio_word": "audio/52_word.mp3",
+    "audio_example": "audio/52_example.mp3"
   },
   {
     "id": "53",
     "category": "Động vật",
-    "vi": "hổ",
+    "vn": "hổ",
     "jp": "虎",
     "kana": "とら",
     "en": "tiger",
@@ -1102,20 +1102,20 @@ const vocabularyData = [
     "cn": "老虎",
     "pinyin": "lǎohǔ",
     "ko": "호랑이",
-    "koreanReading": "horangi",
+    "koread": "horangi",
+    "example_vi": "Con hổ rất mạnh.",
+    "example_ja": "虎はとても強いです。",
+    "example_en": "The tiger is very strong.",
+    "example_cn": "老虎很强壮。",
+    "example_ko": "호랑이는 아주 강합니다.",
     "note": "",
-    "examples": {
-      "vi": "Con hổ rất mạnh.",
-      "jp": "虎はとても強いです。",
-      "en": "The tiger is very strong.",
-      "cn": "老虎很强壮。",
-      "ko": "호랑이는 아주 강합니다."
-    }
+    "audio_word": "audio/53_word.mp3",
+    "audio_example": "audio/53_example.mp3"
   },
   {
     "id": "54",
     "category": "Động vật",
-    "vi": "voi",
+    "vn": "voi",
     "jp": "象",
     "kana": "ぞう",
     "en": "elephant",
@@ -1123,20 +1123,20 @@ const vocabularyData = [
     "cn": "大象",
     "pinyin": "dàxiàng",
     "ko": "코끼리",
-    "koreanReading": "kokkiri",
+    "koread": "kokkiri",
+    "example_vi": "Con voi rất to.",
+    "example_ja": "象はとても大きいです。",
+    "example_en": "The elephant is very big.",
+    "example_cn": "大象很大。",
+    "example_ko": "코끼리는 아주 큽니다.",
     "note": "",
-    "examples": {
-      "vi": "Con voi rất to.",
-      "jp": "象はとても大きいです。",
-      "en": "The elephant is very big.",
-      "cn": "大象很大。",
-      "ko": "코끼리는 아주 큽니다."
-    }
+    "audio_word": "audio/54_word.mp3",
+    "audio_example": "audio/54_example.mp3"
   },
   {
     "id": "55",
     "category": "Động vật",
-    "vi": "gấu",
+    "vn": "gấu",
     "jp": "熊",
     "kana": "くま",
     "en": "bear",
@@ -1144,20 +1144,20 @@ const vocabularyData = [
     "cn": "熊",
     "pinyin": "xióng",
     "ko": "곰",
-    "koreanReading": "gom",
+    "koread": "gom",
+    "example_vi": "Con gấu rất dễ thương.",
+    "example_ja": "熊はかわいいです。",
+    "example_en": "The bear is cute.",
+    "example_cn": "熊很可爱。",
+    "example_ko": "곰은 귀엽습니다.",
     "note": "",
-    "examples": {
-      "vi": "Con gấu rất dễ thương.",
-      "jp": "熊はかわいいです。",
-      "en": "The bear is cute.",
-      "cn": "熊很可爱。",
-      "ko": "곰은 귀엽습니다."
-    }
+    "audio_word": "audio/55_word.mp3",
+    "audio_example": "audio/55_example.mp3"
   },
   {
     "id": "56",
     "category": "Màu sắc",
-    "vi": "màu đỏ",
+    "vn": "màu đỏ",
     "jp": "赤",
     "kana": "あか",
     "en": "red",
@@ -1165,20 +1165,20 @@ const vocabularyData = [
     "cn": "红色",
     "pinyin": "hóngsè",
     "ko": "빨간색",
-    "koreanReading": "ppalgansaek",
+    "koread": "ppalgansaek",
+    "example_vi": "Tôi thích màu đỏ.",
+    "example_ja": "赤が好きです。",
+    "example_en": "I like red.",
+    "example_cn": "我喜欢红色。",
+    "example_ko": "저는 빨간색을 좋아합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi thích màu đỏ.",
-      "jp": "赤が好きです。",
-      "en": "I like red.",
-      "cn": "我喜欢红色。",
-      "ko": "저는 빨간색을 좋아합니다."
-    }
+    "audio_word": "audio/56_word.mp3",
+    "audio_example": "audio/56_example.mp3"
   },
   {
     "id": "57",
     "category": "Màu sắc",
-    "vi": "màu xanh dương",
+    "vn": "màu xanh dương",
     "jp": "青",
     "kana": "あお",
     "en": "blue",
@@ -1186,20 +1186,20 @@ const vocabularyData = [
     "cn": "蓝色",
     "pinyin": "lánsè",
     "ko": "파란색",
-    "koreanReading": "paransaek",
+    "koread": "paransaek",
+    "example_vi": "Bầu trời màu xanh dương.",
+    "example_ja": "空は青いです。",
+    "example_en": "The sky is blue.",
+    "example_cn": "天空是蓝色的。",
+    "example_ko": "하늘은 파란색입니다.",
     "note": "",
-    "examples": {
-      "vi": "Bầu trời màu xanh dương.",
-      "jp": "空は青いです。",
-      "en": "The sky is blue.",
-      "cn": "天空是蓝色的。",
-      "ko": "하늘은 파란색입니다."
-    }
+    "audio_word": "audio/57_word.mp3",
+    "audio_example": "audio/57_example.mp3"
   },
   {
     "id": "58",
     "category": "Màu sắc",
-    "vi": "màu vàng",
+    "vn": "màu vàng",
     "jp": "黄色",
     "kana": "きいろ",
     "en": "yellow",
@@ -1207,20 +1207,20 @@ const vocabularyData = [
     "cn": "黄色",
     "pinyin": "huángsè",
     "ko": "노란색",
-    "koreanReading": "noransaek",
+    "koread": "noransaek",
+    "example_vi": "Bông hoa màu vàng.",
+    "example_ja": "花は黄色です。",
+    "example_en": "The flower is yellow.",
+    "example_cn": "花是黄色的。",
+    "example_ko": "꽃은 노란색입니다.",
     "note": "",
-    "examples": {
-      "vi": "Bông hoa màu vàng.",
-      "jp": "花は黄色です。",
-      "en": "The flower is yellow.",
-      "cn": "花是黄色的。",
-      "ko": "꽃은 노란색입니다."
-    }
+    "audio_word": "audio/58_word.mp3",
+    "audio_example": "audio/58_example.mp3"
   },
   {
     "id": "59",
     "category": "Màu sắc",
-    "vi": "màu xanh lá",
+    "vn": "màu xanh lá",
     "jp": "緑",
     "kana": "みどり",
     "en": "green",
@@ -1228,20 +1228,20 @@ const vocabularyData = [
     "cn": "绿色",
     "pinyin": "lǜsè",
     "ko": "초록색",
-    "koreanReading": "choroksaek",
+    "koread": "choroksaek",
+    "example_vi": "Cây có màu xanh lá.",
+    "example_ja": "木は緑です。",
+    "example_en": "The tree is green.",
+    "example_cn": "树是绿色的。",
+    "example_ko": "나무는 초록색입니다.",
     "note": "",
-    "examples": {
-      "vi": "Cây có màu xanh lá.",
-      "jp": "木は緑です。",
-      "en": "The tree is green.",
-      "cn": "树是绿色的。",
-      "ko": "나무는 초록색입니다."
-    }
+    "audio_word": "audio/59_word.mp3",
+    "audio_example": "audio/59_example.mp3"
   },
   {
     "id": "60",
     "category": "Màu sắc",
-    "vi": "màu trắng",
+    "vn": "màu trắng",
     "jp": "白",
     "kana": "しろ",
     "en": "white",
@@ -1249,20 +1249,20 @@ const vocabularyData = [
     "cn": "白色",
     "pinyin": "báisè",
     "ko": "흰색",
-    "koreanReading": "huinsaek",
+    "koread": "huinsaek",
+    "example_vi": "Con mèo màu trắng.",
+    "example_ja": "猫は白いです。",
+    "example_en": "The cat is white.",
+    "example_cn": "猫是白色的。",
+    "example_ko": "고양이는 흰색입니다.",
     "note": "",
-    "examples": {
-      "vi": "Con mèo màu trắng.",
-      "jp": "猫は白いです。",
-      "en": "The cat is white.",
-      "cn": "猫是白色的。",
-      "ko": "고양이는 흰색입니다."
-    }
+    "audio_word": "audio/60_word.mp3",
+    "audio_example": "audio/60_example.mp3"
   },
   {
     "id": "61",
     "category": "Màu sắc",
-    "vi": "màu đen",
+    "vn": "màu đen",
     "jp": "黒",
     "kana": "くろ",
     "en": "black",
@@ -1270,20 +1270,20 @@ const vocabularyData = [
     "cn": "黑色",
     "pinyin": "hēisè",
     "ko": "검은색",
-    "koreanReading": "geomeunsaek",
+    "koread": "geomeunsaek",
+    "example_vi": "Tôi có một chiếc túi màu đen.",
+    "example_ja": "黒い袋があります。",
+    "example_en": "I have a black bag.",
+    "example_cn": "我有一个黑色的袋子。",
+    "example_ko": "검은 가방이 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi có một chiếc túi màu đen.",
-      "jp": "黒い袋があります。",
-      "en": "I have a black bag.",
-      "cn": "我有一个黑色的袋子。",
-      "ko": "검은 가방이 있습니다."
-    }
+    "audio_word": "audio/61_word.mp3",
+    "audio_example": "audio/61_example.mp3"
   },
   {
     "id": "62",
     "category": "Màu sắc",
-    "vi": "màu hồng",
+    "vn": "màu hồng",
     "jp": "ピンク",
     "kana": "ぴんく",
     "en": "pink",
@@ -1291,20 +1291,20 @@ const vocabularyData = [
     "cn": "粉色",
     "pinyin": "fěnsè",
     "ko": "분홍색",
-    "koreanReading": "bunhongsaek",
+    "koread": "bunhongsaek",
+    "example_vi": "Bông hoa màu hồng rất đẹp.",
+    "example_ja": "ピンクの花はきれいです。",
+    "example_en": "The pink flower is beautiful.",
+    "example_cn": "粉色的花很漂亮。",
+    "example_ko": "분홍 꽃이 아름답습니다.",
     "note": "",
-    "examples": {
-      "vi": "Bông hoa màu hồng rất đẹp.",
-      "jp": "ピンクの花はきれいです。",
-      "en": "The pink flower is beautiful.",
-      "cn": "粉色的花很漂亮。",
-      "ko": "분홍 꽃이 아름답습니다."
-    }
+    "audio_word": "audio/62_word.mp3",
+    "audio_example": "audio/62_example.mp3"
   },
   {
     "id": "63",
     "category": "Màu sắc",
-    "vi": "màu tím",
+    "vn": "màu tím",
     "jp": "紫",
     "kana": "むらさき",
     "en": "purple",
@@ -1312,20 +1312,20 @@ const vocabularyData = [
     "cn": "紫色",
     "pinyin": "zǐsè",
     "ko": "보라색",
-    "koreanReading": "borasaek",
+    "koread": "borasaek",
+    "example_vi": "Tôi thích màu tím.",
+    "example_ja": "紫が好きです。",
+    "example_en": "I like purple.",
+    "example_cn": "我喜欢紫色。",
+    "example_ko": "보라색을 좋아합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi thích màu tím.",
-      "jp": "紫が好きです。",
-      "en": "I like purple.",
-      "cn": "我喜欢紫色。",
-      "ko": "보라색을 좋아합니다."
-    }
+    "audio_word": "audio/63_word.mp3",
+    "audio_example": "audio/63_example.mp3"
   },
   {
     "id": "64",
     "category": "Màu sắc",
-    "vi": "màu cam",
+    "vn": "màu cam",
     "jp": "オレンジ",
     "kana": "おれんじ",
     "en": "orange",
@@ -1333,20 +1333,20 @@ const vocabularyData = [
     "cn": "橙色",
     "pinyin": "chéngsè",
     "ko": "주황색",
-    "koreanReading": "juhwangsaek",
+    "koread": "juhwangsaek",
+    "example_vi": "Quả cam có màu cam.",
+    "example_ja": "オレンジはオレンジ色です。",
+    "example_en": "The orange is orange.",
+    "example_cn": "橙子是橙色的。",
+    "example_ko": "오렌지는 주황색입니다.",
     "note": "",
-    "examples": {
-      "vi": "Quả cam có màu cam.",
-      "jp": "オレンジはオレンジ色です。",
-      "en": "The orange is orange.",
-      "cn": "橙子是橙色的。",
-      "ko": "오렌지는 주황색입니다."
-    }
+    "audio_word": "audio/64_word.mp3",
+    "audio_example": "audio/64_example.mp3"
   },
   {
     "id": "65",
     "category": "Màu sắc",
-    "vi": "màu nâu",
+    "vn": "màu nâu",
     "jp": "茶色",
     "kana": "ちゃいろ",
     "en": "brown",
@@ -1354,20 +1354,20 @@ const vocabularyData = [
     "cn": "棕色",
     "pinyin": "zōngsè",
     "ko": "갈색",
-    "koreanReading": "galsaek",
+    "koread": "galsaek",
+    "example_vi": "Con gấu màu nâu.",
+    "example_ja": "熊は茶色です。",
+    "example_en": "The bear is brown.",
+    "example_cn": "熊是棕色的。",
+    "example_ko": "곰은 갈색입니다.",
     "note": "",
-    "examples": {
-      "vi": "Con gấu màu nâu.",
-      "jp": "熊は茶色です。",
-      "en": "The bear is brown.",
-      "cn": "熊是棕色的。",
-      "ko": "곰은 갈색입니다."
-    }
+    "audio_word": "audio/65_word.mp3",
+    "audio_example": "audio/65_example.mp3"
   },
   {
     "id": "66",
     "category": "Thể thao",
-    "vi": "thể thao",
+    "vn": "thể thao",
     "jp": "スポーツ",
     "kana": "すぽーつ",
     "en": "sports",
@@ -1375,20 +1375,20 @@ const vocabularyData = [
     "cn": "运动",
     "pinyin": "yùndòng",
     "ko": "운동",
-    "koreanReading": "undong",
+    "koread": "undong",
+    "example_vi": "Tôi thích thể thao.",
+    "example_ja": "スポーツが好きです。",
+    "example_en": "I like sports.",
+    "example_cn": "我喜欢运动。",
+    "example_ko": "저는 운동을 좋아합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi thích thể thao.",
-      "jp": "スポーツが好きです。",
-      "en": "I like sports.",
-      "cn": "我喜欢运动。",
-      "ko": "저는 운동을 좋아합니다."
-    }
+    "audio_word": "audio/66_word.mp3",
+    "audio_example": "audio/66_example.mp3"
   },
   {
     "id": "67",
     "category": "Thể thao",
-    "vi": "bóng đá",
+    "vn": "bóng đá",
     "jp": "サッカー",
     "kana": "さっかー",
     "en": "soccer",
@@ -1396,20 +1396,20 @@ const vocabularyData = [
     "cn": "足球",
     "pinyin": "zúqiú",
     "ko": "축구",
-    "koreanReading": "chukgu",
+    "koread": "chukgu",
+    "example_vi": "Tôi chơi bóng đá.",
+    "example_ja": "サッカーをします。",
+    "example_en": "I play soccer.",
+    "example_cn": "我踢足球。",
+    "example_ko": "축구를 합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi chơi bóng đá.",
-      "jp": "サッカーをします。",
-      "en": "I play soccer.",
-      "cn": "我踢足球。",
-      "ko": "축구를 합니다."
-    }
+    "audio_word": "audio/67_word.mp3",
+    "audio_example": "audio/67_example.mp3"
   },
   {
     "id": "68",
     "category": "Thể thao",
-    "vi": "bóng rổ",
+    "vn": "bóng rổ",
     "jp": "バスケットボール",
     "kana": "ばすけっとぼーる",
     "en": "basketball",
@@ -1417,20 +1417,20 @@ const vocabularyData = [
     "cn": "篮球",
     "pinyin": "lánqiú",
     "ko": "농구",
-    "koreanReading": "nonggu",
+    "koread": "nonggu",
+    "example_vi": "Anh ấy chơi bóng rổ.",
+    "example_ja": "彼はバスケットボールをします。",
+    "example_en": "He plays basketball.",
+    "example_cn": "他打篮球。",
+    "example_ko": "그는 농구를 합니다.",
     "note": "",
-    "examples": {
-      "vi": "Anh ấy chơi bóng rổ.",
-      "jp": "彼はバスケットボールをします。",
-      "en": "He plays basketball.",
-      "cn": "他打篮球。",
-      "ko": "그는 농구를 합니다."
-    }
+    "audio_word": "audio/68_word.mp3",
+    "audio_example": "audio/68_example.mp3"
   },
   {
     "id": "69",
     "category": "Thể thao",
-    "vi": "bóng chuyền",
+    "vn": "bóng chuyền",
     "jp": "バレーボール",
     "kana": "ばれーぼーる",
     "en": "volleyball",
@@ -1438,20 +1438,20 @@ const vocabularyData = [
     "cn": "排球",
     "pinyin": "páiqiú",
     "ko": "배구",
-    "koreanReading": "baegu",
+    "koread": "baegu",
+    "example_vi": "Chúng tôi chơi bóng chuyền.",
+    "example_ja": "私たちはバレーボールをします。",
+    "example_en": "We play volleyball.",
+    "example_cn": "我们打排球。",
+    "example_ko": "우리는 배구를 합니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng tôi chơi bóng chuyền.",
-      "jp": "私たちはバレーボールをします。",
-      "en": "We play volleyball.",
-      "cn": "我们打排球。",
-      "ko": "우리는 배구를 합니다."
-    }
+    "audio_word": "audio/69_word.mp3",
+    "audio_example": "audio/69_example.mp3"
   },
   {
     "id": "70",
     "category": "Thể thao",
-    "vi": "chạy",
+    "vn": "chạy",
     "jp": "走る",
     "kana": "はしる",
     "en": "run",
@@ -1459,20 +1459,20 @@ const vocabularyData = [
     "cn": "跑步",
     "pinyin": "pǎobù",
     "ko": "달리다",
-    "koreanReading": "dallida",
+    "koread": "dallida",
+    "example_vi": "Tôi chạy mỗi sáng.",
+    "example_ja": "毎朝走ります。",
+    "example_en": "I run every morning.",
+    "example_cn": "我每天早上跑步。",
+    "example_ko": "매일 아침 달립니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi chạy mỗi sáng.",
-      "jp": "毎朝走ります。",
-      "en": "I run every morning.",
-      "cn": "我每天早上跑步。",
-      "ko": "매일 아침 달립니다."
-    }
+    "audio_word": "audio/70_word.mp3",
+    "audio_example": "audio/70_example.mp3"
   },
   {
     "id": "71",
     "category": "Thể thao",
-    "vi": "bơi",
+    "vn": "bơi",
     "jp": "泳ぐ",
     "kana": "およぐ",
     "en": "swim",
@@ -1480,20 +1480,20 @@ const vocabularyData = [
     "cn": "游泳",
     "pinyin": "yóuyǒng",
     "ko": "수영하다",
-    "koreanReading": "suyeonghada",
+    "koread": "suyeonghada",
+    "example_vi": "Tôi thích bơi.",
+    "example_ja": "泳ぐのが好きです。",
+    "example_en": "I like swimming.",
+    "example_cn": "我喜欢游泳。",
+    "example_ko": "수영을 좋아합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi thích bơi.",
-      "jp": "泳ぐのが好きです。",
-      "en": "I like swimming.",
-      "cn": "我喜欢游泳。",
-      "ko": "수영을 좋아합니다."
-    }
+    "audio_word": "audio/71_word.mp3",
+    "audio_example": "audio/71_example.mp3"
   },
   {
     "id": "72",
     "category": "Thể thao",
-    "vi": "xe đạp",
+    "vn": "xe đạp",
     "jp": "自転車",
     "kana": "じてんしゃ",
     "en": "bicycle",
@@ -1501,20 +1501,20 @@ const vocabularyData = [
     "cn": "自行车",
     "pinyin": "zìxíngchē",
     "ko": "자전거",
-    "koreanReading": "jajeongeo",
+    "koread": "jajeongeo",
+    "example_vi": "Tôi đi xe đạp.",
+    "example_ja": "自転車に乗ります。",
+    "example_en": "I ride a bicycle.",
+    "example_cn": "我骑自行车。",
+    "example_ko": "자전거를 탑니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi đi xe đạp.",
-      "jp": "自転車に乗ります。",
-      "en": "I ride a bicycle.",
-      "cn": "我骑自行车。",
-      "ko": "자전거를 탑니다."
-    }
+    "audio_word": "audio/72_word.mp3",
+    "audio_example": "audio/72_example.mp3"
   },
   {
     "id": "73",
     "category": "Thể thao",
-    "vi": "quần vợt",
+    "vn": "quần vợt",
     "jp": "テニス",
     "kana": "てにす",
     "en": "tennis",
@@ -1522,20 +1522,20 @@ const vocabularyData = [
     "cn": "网球",
     "pinyin": "wǎngqiú",
     "ko": "테니스",
-    "koreanReading": "teniseu",
+    "koread": "teniseu",
+    "example_vi": "Tôi chơi quần vợt.",
+    "example_ja": "テニスをします。",
+    "example_en": "I play tennis.",
+    "example_cn": "我打网球。",
+    "example_ko": "테니스를 합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi chơi quần vợt.",
-      "jp": "テニスをします。",
-      "en": "I play tennis.",
-      "cn": "我打网球。",
-      "ko": "테니스를 합니다."
-    }
+    "audio_word": "audio/73_word.mp3",
+    "audio_example": "audio/73_example.mp3"
   },
   {
     "id": "74",
     "category": "Thể thao",
-    "vi": "cầu lông",
+    "vn": "cầu lông",
     "jp": "バドミントン",
     "kana": "ばどみんとん",
     "en": "badminton",
@@ -1543,20 +1543,20 @@ const vocabularyData = [
     "cn": "羽毛球",
     "pinyin": "yǔmáoqiú",
     "ko": "배드민턴",
-    "koreanReading": "baedeuminteon",
+    "koread": "baedeuminteon",
+    "example_vi": "Tôi chơi cầu lông.",
+    "example_ja": "バドミントンをします。",
+    "example_en": "I play badminton.",
+    "example_cn": "我打羽毛球。",
+    "example_ko": "배드민턴을 합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi chơi cầu lông.",
-      "jp": "バドミントンをします。",
-      "en": "I play badminton.",
-      "cn": "我打羽毛球。",
-      "ko": "배드민턴을 합니다."
-    }
+    "audio_word": "audio/74_word.mp3",
+    "audio_example": "audio/74_example.mp3"
   },
   {
     "id": "75",
     "category": "Thể thao",
-    "vi": "đi bộ",
+    "vn": "đi bộ",
     "jp": "歩く",
     "kana": "あるく",
     "en": "walk",
@@ -1564,20 +1564,20 @@ const vocabularyData = [
     "cn": "散步",
     "pinyin": "sànbù",
     "ko": "걷다",
-    "koreanReading": "geotda",
+    "koread": "geotda",
+    "example_vi": "Chúng tôi đi bộ trong công viên.",
+    "example_ja": "公園を歩きます。",
+    "example_en": "We walk in the park.",
+    "example_cn": "我们在公园散步。",
+    "example_ko": "공원에서 산책합니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng tôi đi bộ trong công viên.",
-      "jp": "公園を歩きます。",
-      "en": "We walk in the park.",
-      "cn": "我们在公园散步。",
-      "ko": "공원에서 산책합니다."
-    }
+    "audio_word": "audio/75_word.mp3",
+    "audio_example": "audio/75_example.mp3"
   },
   {
     "id": "76",
     "category": "Tình yêu",
-    "vi": "tình yêu",
+    "vn": "tình yêu",
     "jp": "愛",
     "kana": "あい",
     "en": "love",
@@ -1585,20 +1585,20 @@ const vocabularyData = [
     "cn": "爱",
     "pinyin": "ài",
     "ko": "사랑",
-    "koreanReading": "sarang",
+    "koread": "sarang",
+    "example_vi": "Tình yêu làm cuộc sống đẹp hơn.",
+    "example_ja": "愛は人生を豊かにします。",
+    "example_en": "Love makes life beautiful.",
+    "example_cn": "爱让生活更美好。",
+    "example_ko": "사랑은 삶을 아름답게 합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tình yêu làm cuộc sống đẹp hơn.",
-      "jp": "愛は人生を豊かにします。",
-      "en": "Love makes life beautiful.",
-      "cn": "爱让生活更美好。",
-      "ko": "사랑은 삶을 아름답게 합니다."
-    }
+    "audio_word": "audio/76_word.mp3",
+    "audio_example": "audio/76_example.mp3"
   },
   {
     "id": "77",
     "category": "Tình yêu",
-    "vi": "trái tim",
+    "vn": "trái tim",
     "jp": "心",
     "kana": "こころ",
     "en": "heart",
@@ -1606,20 +1606,20 @@ const vocabularyData = [
     "cn": "心",
     "pinyin": "xīn",
     "ko": "마음",
-    "koreanReading": "maeum",
+    "koread": "maeum",
+    "example_vi": "Tôi có một trái tim ấm áp.",
+    "example_ja": "温かい心があります。",
+    "example_en": "I have a warm heart.",
+    "example_cn": "我有一颗温暖的心。",
+    "example_ko": "따뜻한 마음이 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi có một trái tim ấm áp.",
-      "jp": "温かい心があります。",
-      "en": "I have a warm heart.",
-      "cn": "我有一颗温暖的心。",
-      "ko": "따뜻한 마음이 있습니다."
-    }
+    "audio_word": "audio/77_word.mp3",
+    "audio_example": "audio/77_example.mp3"
   },
   {
     "id": "78",
     "category": "Tình yêu",
-    "vi": "hạnh phúc",
+    "vn": "hạnh phúc",
     "jp": "幸せ",
     "kana": "しあわせ",
     "en": "happiness",
@@ -1627,20 +1627,20 @@ const vocabularyData = [
     "cn": "幸福",
     "pinyin": "xìngfú",
     "ko": "행복",
-    "koreanReading": "haengbok",
+    "koread": "haengbok",
+    "example_vi": "Chúng tôi rất hạnh phúc.",
+    "example_ja": "私たちは幸せです。",
+    "example_en": "We are very happy.",
+    "example_cn": "我们很幸福。",
+    "example_ko": "우리는 행복합니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng tôi rất hạnh phúc.",
-      "jp": "私たちは幸せです。",
-      "en": "We are very happy.",
-      "cn": "我们很幸福。",
-      "ko": "우리는 행복합니다."
-    }
+    "audio_word": "audio/78_word.mp3",
+    "audio_example": "audio/78_example.mp3"
   },
   {
     "id": "79",
     "category": "Tình yêu",
-    "vi": "nụ cười",
+    "vn": "nụ cười",
     "jp": "笑顔",
     "kana": "えがお",
     "en": "smile",
@@ -1648,20 +1648,20 @@ const vocabularyData = [
     "cn": "笑容",
     "pinyin": "xiàoróng",
     "ko": "미소",
-    "koreanReading": "miso",
+    "koread": "miso",
+    "example_vi": "Nụ cười của bạn rất đẹp.",
+    "example_ja": "あなたの笑顔はすてきです。",
+    "example_en": "Your smile is beautiful.",
+    "example_cn": "你的笑容很美。",
+    "example_ko": "당신의 미소는 아름답습니다.",
     "note": "",
-    "examples": {
-      "vi": "Nụ cười của bạn rất đẹp.",
-      "jp": "あなたの笑顔はすてきです。",
-      "en": "Your smile is beautiful.",
-      "cn": "你的笑容很美。",
-      "ko": "당신의 미소는 아름답습니다."
-    }
+    "audio_word": "audio/79_word.mp3",
+    "audio_example": "audio/79_example.mp3"
   },
   {
     "id": "80",
     "category": "Tình yêu",
-    "vi": "bạn",
+    "vn": "bạn",
     "jp": "友達",
     "kana": "ともだち",
     "en": "friend",
@@ -1669,20 +1669,20 @@ const vocabularyData = [
     "cn": "朋友",
     "pinyin": "péngyou",
     "ko": "친구",
-    "koreanReading": "chingu",
+    "koread": "chingu",
+    "example_vi": "Bạn bè rất quan trọng.",
+    "example_ja": "友達は大切です。",
+    "example_en": "Friends are important.",
+    "example_cn": "朋友很重要。",
+    "example_ko": "친구는 소중합니다.",
     "note": "",
-    "examples": {
-      "vi": "Bạn bè rất quan trọng.",
-      "jp": "友達は大切です。",
-      "en": "Friends are important.",
-      "cn": "朋友很重要。",
-      "ko": "친구는 소중합니다."
-    }
+    "audio_word": "audio/80_word.mp3",
+    "audio_example": "audio/80_example.mp3"
   },
   {
     "id": "81",
     "category": "Tình yêu",
-    "vi": "quà tặng",
+    "vn": "quà tặng",
     "jp": "贈り物",
     "kana": "おくりもの",
     "en": "gift",
@@ -1690,20 +1690,20 @@ const vocabularyData = [
     "cn": "礼物",
     "pinyin": "lǐwù",
     "ko": "선물",
-    "koreanReading": "seonmul",
+    "koread": "seonmul",
+    "example_vi": "Tôi chuẩn bị một món quà.",
+    "example_ja": "贈り物を用意します。",
+    "example_en": "I prepare a gift.",
+    "example_cn": "我准备了一份礼物。",
+    "example_ko": "선물을 준비합니다.",
     "note": "",
-    "examples": {
-      "vi": "Tôi chuẩn bị một món quà.",
-      "jp": "贈り物を用意します。",
-      "en": "I prepare a gift.",
-      "cn": "我准备了一份礼物。",
-      "ko": "선물을 준비합니다."
-    }
+    "audio_word": "audio/81_word.mp3",
+    "audio_example": "audio/81_example.mp3"
   },
   {
     "id": "82",
     "category": "Tình yêu",
-    "vi": "hoa",
+    "vn": "hoa",
     "jp": "花",
     "kana": "はな",
     "en": "flower",
@@ -1711,20 +1711,20 @@ const vocabularyData = [
     "cn": "花",
     "pinyin": "huā",
     "ko": "꽃",
-    "koreanReading": "kkot",
+    "koread": "kkot",
+    "example_vi": "Bông hoa rất đẹp.",
+    "example_ja": "花はきれいです。",
+    "example_en": "The flower is beautiful.",
+    "example_cn": "花很漂亮。",
+    "example_ko": "꽃이 아름답습니다.",
     "note": "",
-    "examples": {
-      "vi": "Bông hoa rất đẹp.",
-      "jp": "花はきれいです。",
-      "en": "The flower is beautiful.",
-      "cn": "花很漂亮。",
-      "ko": "꽃이 아름답습니다."
-    }
+    "audio_word": "audio/82_word.mp3",
+    "audio_example": "audio/82_example.mp3"
   },
   {
     "id": "83",
     "category": "Tình yêu",
-    "vi": "lời hứa",
+    "vn": "lời hứa",
     "jp": "約束",
     "kana": "やくそく",
     "en": "promise",
@@ -1732,20 +1732,20 @@ const vocabularyData = [
     "cn": "约定",
     "pinyin": "yuēdìng",
     "ko": "약속",
-    "koreanReading": "yaksok",
+    "koread": "yaksok",
+    "example_vi": "Chúng ta giữ lời hứa.",
+    "example_ja": "約束を守ります。",
+    "example_en": "We keep our promise.",
+    "example_cn": "我们遵守约定。",
+    "example_ko": "우리는 약속을 지킵니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng ta giữ lời hứa.",
-      "jp": "約束を守ります。",
-      "en": "We keep our promise.",
-      "cn": "我们遵守约定。",
-      "ko": "우리는 약속을 지킵니다."
-    }
+    "audio_word": "audio/83_word.mp3",
+    "audio_example": "audio/83_example.mp3"
   },
   {
     "id": "84",
     "category": "Tình yêu",
-    "vi": "cùng nhau",
+    "vn": "cùng nhau",
     "jp": "一緒",
     "kana": "いっしょ",
     "en": "together",
@@ -1753,20 +1753,20 @@ const vocabularyData = [
     "cn": "一起",
     "pinyin": "yìqǐ",
     "ko": "함께",
-    "koreanReading": "hamkke",
+    "koread": "hamkke",
+    "example_vi": "Chúng ta cùng nhau đi bộ.",
+    "example_ja": "一緒に歩きます。",
+    "example_en": "We walk together.",
+    "example_cn": "我们一起散步。",
+    "example_ko": "함께 걸어갑니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng ta cùng nhau đi bộ.",
-      "jp": "一緒に歩きます。",
-      "en": "We walk together.",
-      "cn": "我们一起散步。",
-      "ko": "함께 걸어갑니다."
-    }
+    "audio_word": "audio/84_word.mp3",
+    "audio_example": "audio/84_example.mp3"
   },
   {
     "id": "85",
     "category": "Tình yêu",
-    "vi": "ước mơ",
+    "vn": "ước mơ",
     "jp": "夢",
     "kana": "ゆめ",
     "en": "dream",
@@ -1774,14 +1774,14 @@ const vocabularyData = [
     "cn": "梦想",
     "pinyin": "mèngxiǎng",
     "ko": "꿈",
-    "koreanReading": "kkum",
+    "koread": "kkum",
+    "example_vi": "Chúng tôi có một ước mơ đẹp.",
+    "example_ja": "すてきな夢があります。",
+    "example_en": "We have a beautiful dream.",
+    "example_cn": "我们有一个美好的梦想。",
+    "example_ko": "우리는 아름다운 꿈이 있습니다.",
     "note": "",
-    "examples": {
-      "vi": "Chúng tôi có một ước mơ đẹp.",
-      "jp": "すてきな夢があります。",
-      "en": "We have a beautiful dream.",
-      "cn": "我们有一个美好的梦想。",
-      "ko": "우리는 아름다운 꿈이 있습니다."
-    }
+    "audio_word": "audio/85_word.mp3",
+    "audio_example": "audio/85_example.mp3"
   }
 ];

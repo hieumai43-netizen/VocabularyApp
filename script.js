@@ -1,198 +1,279 @@
+let allWords = vocabularyData || [];
+let words = [...allWords];
 let currentIndex = 0;
-let filteredData = [...vocabularyData];
+let currentAudio = null;
+let currentMode = "study";
 
-const categorySelect = document.getElementById("categorySelect");
-const modeSelect = document.getElementById("modeSelect");
-const optionBtn = document.getElementById("optionBtn");
-const optionBox = document.getElementById("optionBox");
-const randomCheck = document.getElementById("randomCheck");
-const speedSelect = document.getElementById("speedSelect");
-
-function initCategory() {
-  const categories = ["Tất cả danh mục", ...new Set(vocabularyData.map(w => w.category))];
-
-  categorySelect.innerHTML = categories.map(c => `
-    <option value="${c}">☑ ${c}</option>
-  `).join("");
+function $(id) {
+  return document.getElementById(id);
 }
 
-function filterCategory() {
-  const selected = categorySelect.value;
+function setText(id, value) {
+  const el = $(id);
+  if (el) el.textContent = value || "";
+}
 
-  if (selected === "Tất cả danh mục") {
-    filteredData = [...vocabularyData];
+function getCurrentWord() {
+  return words[currentIndex];
+}
+
+function langInfo(lang) {
+  const w = getCurrentWord();
+
+  if (lang === "ja") return { word: w.jp, read: w.kana, ex: w.example_ja, langCode: "ja-JP", tag: "JA" };
+  if (lang === "en") return { word: w.en, read: w.ipa, ex: w.example_en, langCode: "en-US", tag: "EN" };
+  if (lang === "cn") return { word: w.cn, read: w.pinyin, ex: w.example_cn, langCode: "zh-CN", tag: "CN" };
+  if (lang === "ko") return { word: w.ko, read: w.koread, ex: w.example_ko, langCode: "ko-KR", tag: "KO" };
+
+  return { word: w.jp, read: w.kana, ex: w.example_ja, langCode: "ja-JP", tag: "JA" };
+}
+
+function showWord() {
+  if (!words.length) return;
+
+  const w = getCurrentWord();
+  const lang = $("langSelect") ? $("langSelect").value : "ja";
+  const main = langInfo(lang);
+
+  setText("counter", `${currentIndex + 1} / ${words.length}`);
+  setText("todayProgress", `${currentIndex + 1} / ${words.length} từ`);
+
+  setText("mainWord", main.word);
+  setText("mainRead", main.read);
+
+  setText("vn", w.vn);
+
+  setText("ja", w.jp);
+  setText("kana", w.kana);
+
+  setText("en", w.en);
+  setText("ipa", w.ipa);
+
+  setText("cn", w.cn);
+  setText("pinyin", w.pinyin);
+
+  setText("ko", w.ko);
+  setText("koRead", w.koread);
+
+  setText("exVi", w.example_vi);
+  setText("exJa", w.example_ja);
+  setText("exEn", w.example_en);
+  setText("exCn", w.example_cn);
+  setText("exKo", w.example_ko);
+
+  setText("listenCounter", `${currentIndex + 1} / ${words.length}`);
+  setText("listenWord", main.word);
+  setText("listenRead", main.read);
+  setText("listenExampleText", main.ex);
+  setText("audioText", `Từ ${currentIndex + 1} / ${words.length}`);
+
+  const progress = ((currentIndex + 1) / words.length) * 100;
+  if ($("progressFill")) $("progressFill").style.width = progress + "%";
+  if ($("audioRange")) $("audioRange").value = progress;
+}
+
+function nextWord() {
+  currentIndex++;
+  if (currentIndex >= words.length) currentIndex = 0;
+  showWord();
+}
+
+function prevWord() {
+  currentIndex--;
+  if (currentIndex < 0) currentIndex = words.length - 1;
+  showWord();
+}
+
+function speakText(text, langCode) {
+  if (!text) return;
+
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+
+  speechSynthesis.cancel();
+
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = langCode;
+  utter.rate = 0.85;
+  utter.pitch = 1;
+
+  speechSynthesis.speak(utter);
+}
+
+function playAudioFile(path, fallbackText, langCode) {
+  if (!path) {
+    speakText(fallbackText, langCode);
+    return;
+  }
+
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+
+  currentAudio = new Audio(path);
+
+  currentAudio.onerror = function () {
+    speakText(fallbackText, langCode);
+  };
+
+  currentAudio.play().catch(function () {
+    speakText(fallbackText, langCode);
+  });
+}
+
+function speak(lang) {
+  const info = langInfo(lang);
+  speakText(info.word, info.langCode);
+}
+
+function speakExample(lang) {
+  const info = langInfo(lang);
+  speakText(info.ex, info.langCode);
+}
+
+function speakMainWord() {
+  const lang = $("langSelect") ? $("langSelect").value : "ja";
+  const info = langInfo(lang);
+  speakText(info.word, info.langCode);
+}
+
+function playBigListen() {
+  const lang = $("langSelect") ? $("langSelect").value : "ja";
+  const info = langInfo(lang);
+  const w = getCurrentWord();
+
+  setText("playingText", "Đang phát...");
+
+  playAudioFile(w.audio_word, info.word, info.langCode);
+}
+
+function filterWords() {
+  const category = $("categorySelect").value;
+
+  if (category === "all") {
+    words = [...allWords];
   } else {
-    filteredData = vocabularyData.filter(w => w.category === selected);
+    words = allWords.filter(w => {
+      const c = (w.category || "").toLowerCase();
+      return c.includes(category);
+    });
   }
 
   currentIndex = 0;
-  renderCard();
-}
 
-function getMainLanguage(word) {
-  const mode = modeSelect.value;
-
-  if (mode === "jp") {
-    return { text: word.jp, reading: word.kana, lang: "ja-JP" };
+  if (!words.length) {
+    words = [...allWords];
+    currentIndex = 0;
   }
 
-  if (mode === "en") {
-    return { text: word.en, reading: word.ipa, lang: "en-US" };
+  showWord();
+}
+
+function switchToStudy() {
+  currentMode = "study";
+  $("studyMode").classList.remove("hidden");
+  $("listenMode").classList.add("hidden");
+  $("modeStudy").classList.add("active");
+  $("modeListen").classList.remove("active");
+}
+
+function switchToListen() {
+  currentMode = "listen";
+  $("studyMode").classList.add("hidden");
+  $("listenMode").classList.remove("hidden");
+  $("modeStudy").classList.remove("active");
+  $("modeListen").classList.add("active");
+  showWord();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (!words || words.length === 0) {
+    alert("Không có dữ liệu từ vựng");
+    return;
   }
 
-  if (mode === "cn") {
-    return { text: word.cn, reading: word.pinyin, lang: "zh-CN" };
-  }
+  showWord();
 
-  return { text: word.ko, reading: word.koreanReading, lang: "ko-KR" };
-}
+  $("nextBtn").addEventListener("click", nextWord);
+  $("prevBtn").addEventListener("click", prevWord);
 
-function renderCard() {
-  const word = filteredData[currentIndex];
-  if (!word) return;
-
-  const main = getMainLanguage(word);
-
-  document.getElementById("mainWord").textContent = main.text;
-  document.getElementById("mainReading").textContent = main.reading;
-
-  document.getElementById("countBadge").textContent = `${currentIndex + 1} / ${filteredData.length}`;
-  document.getElementById("progressText").textContent = `${currentIndex + 1} / ${filteredData.length} từ`;
-  document.getElementById("bottomCount").textContent = `Từ ${currentIndex + 1} / ${filteredData.length}`;
-
-  const percent = Math.round(((currentIndex + 1) / filteredData.length) * 100);
-  document.getElementById("percentText").textContent = `${percent}%`;
-  document.getElementById("progressBar").style.width = `${percent}%`;
-
-  document.getElementById("wordTable").innerHTML = `
-    <div>
-      <span class="tag vi">VI</span>
-      <b>${word.vi}</b>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div>
-      <span class="tag ja">JA</span>
-      <span>${word.jp}</span>
-      <span>${word.kana}</span>
-      <button onclick="speak('${word.jp}', 'ja-JP')">🔊</button>
-    </div>
-
-    <div>
-      <span class="tag en">EN</span>
-      <span>${word.en}</span>
-      <span>${word.ipa}</span>
-      <button onclick="speak('${word.en}', 'en-US')">🔊</button>
-    </div>
-
-    <div>
-      <span class="tag cn">CN</span>
-      <span>${word.cn}</span>
-      <span>${word.pinyin}</span>
-      <button onclick="speak('${word.cn}', 'zh-CN')">🔊</button>
-    </div>
-
-    <div>
-      <span class="tag ko">KO</span>
-      <span>${word.ko}</span>
-      <span>${word.koreanReading}</span>
-      <button onclick="speak('${word.ko}', 'ko-KR')">🔊</button>
-    </div>
-  `;
-
-  document.getElementById("exampleList").innerHTML = `
-    <p>
-      <span class="tag vi">VI</span>
-      <span>${word.examples.vi}</span>
-      <span></span>
-    </p>
-
-    <p>
-      <span class="tag ja">JA</span>
-      <span>${word.examples.jp}</span>
-      <button onclick="speak('${word.examples.jp}', 'ja-JP')">🔊</button>
-    </p>
-
-    <p>
-      <span class="tag en">EN</span>
-      <span>${word.examples.en}</span>
-      <button onclick="speak('${word.examples.en}', 'en-US')">🔊</button>
-    </p>
-
-    <p>
-      <span class="tag cn">CN</span>
-      <span>${word.examples.cn}</span>
-      <button onclick="speak('${word.examples.cn}', 'zh-CN')">🔊</button>
-    </p>
-
-    <p>
-      <span class="tag ko">KO</span>
-      <span>${word.examples.ko}</span>
-      <button onclick="speak('${word.examples.ko}', 'ko-KR')">🔊</button>
-    </p>
-  `;
-}
-
-function speak(text, lang) {
-  speechSynthesis.cancel();
-
-  const voice = new SpeechSynthesisUtterance(text);
-  voice.lang = lang;
-  voice.rate = Number(speedSelect.value);
-
-  speechSynthesis.speak(voice);
-}
-
-function speakMain() {
-  const word = filteredData[currentIndex];
-  const main = getMainLanguage(word);
-  speak(main.text, main.lang);
-}
-
-function nextCard() {
-  if (randomCheck.checked) {
-    currentIndex = Math.floor(Math.random() * filteredData.length);
+  $("speakMain").addEventListener("click", speakMainWord);
+  $("bigPlay").addEventListener("click", playBigListen);
+$("pauseBtn").addEventListener("click", function () {
+  if (isAutoListening) {
+    stopAutoListen();
+    $("pauseBtn").textContent = "▶";
   } else {
-    currentIndex = (currentIndex + 1) % filteredData.length;
+    startAutoListen();
+    $("pauseBtn").textContent = "Ⅱ";
   }
-
-  resetStatus();
-  renderCard();
-}
-
-function prevCard() {
-  currentIndex = (currentIndex - 1 + filteredData.length) % filteredData.length;
-  resetStatus();
-  renderCard();
-}
-
-function markGood() {
-  const badge = document.getElementById("statusBadge");
-  badge.textContent = "Đã nhớ";
-  badge.className = "remembered";
-}
-
-function markBad() {
-  resetStatus();
-}
-
-function resetStatus() {
-  const badge = document.getElementById("statusBadge");
-  badge.textContent = "Chưa nhớ";
-  badge.className = "";
-}
-
-function reviewLater() {
-  nextCard();
-}
-
-optionBtn.addEventListener("click", () => {
-  optionBox.classList.toggle("hidden");
 });
 
-categorySelect.addEventListener("change", filterCategory);
-modeSelect.addEventListener("change", renderCard);
+$("autoToggle").addEventListener("change", function () {
+  if (this.checked) {
+    startAutoListen();
+    $("pauseBtn").textContent = "Ⅱ";
+  } else {
+    stopAutoListen();
+    $("pauseBtn").textContent = "▶";
+  }
+});
 
-initCategory();
-renderCard();
+  $("langSelect").addEventListener("change", showWord);
+  $("categorySelect").addEventListener("change", filterWords);
+
+  $("modeStudy").addEventListener("click", switchToStudy);
+  $("modeListen").addEventListener("click", switchToListen);
+  $("bottomModeBtn").addEventListener("click", switchToListen);
+  let autoListenTimer = null;
+let isAutoListening = false;
+
+function autoListenOneWord() {
+  const lang = $("langSelect") ? $("langSelect").value : "ja";
+  const info = langInfo(lang);
+
+  showWord();
+  setText("playingText", "Đang nghe tự động...");
+
+  speakText(info.word, info.langCode);
+
+  autoListenTimer = setTimeout(function () {
+    speakText(info.ex, info.langCode);
+
+    autoListenTimer = setTimeout(function () {
+      nextWord();
+
+      if (isAutoListening) {
+        autoListenOneWord();
+      }
+    }, 3500);
+  }, 2200);
+}
+
+function startAutoListen() {
+  isAutoListening = true;
+  autoListenOneWord();
+  setText("playingText", "Đang nghe tự động...");
+}
+
+function stopAutoListen() {
+  isAutoListening = false;
+
+  if (autoListenTimer) {
+    clearTimeout(autoListenTimer);
+    autoListenTimer = null;
+  }
+
+  speechSynthesis.cancel();
+
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+
+  setText("playingText", "Đã tạm dừng");
+}
+});

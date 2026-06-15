@@ -1,68 +1,64 @@
 import openpyxl
 import json
+import os
 
-excel_file = "vocabulary_database_template.xlsx"
-output_file = "data.js"
-sheet_name = "Vocabulary"
+EXCEL_FILE = "vocabulary_database_template.xlsx"
+OUTPUT_FILE = "data.js"
 
-wb = openpyxl.load_workbook(excel_file)
-ws = wb[sheet_name]
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+excel_path = os.path.join(BASE_DIR, EXCEL_FILE)
+output_path = os.path.join(BASE_DIR, OUTPUT_FILE)
 
-headers = {}
-for col in range(1, ws.max_column + 1):
-    header = ws.cell(row=1, column=col).value
-    if header:
-        headers[str(header).strip()] = col
+wb = openpyxl.load_workbook(excel_path)
+ws = wb.active
 
-def get_value(row, column_name):
-    col = headers.get(column_name)
-    if not col:
-        return ""
-    value = ws.cell(row=row, column=col).value
-    return "" if value is None else str(value).strip()
+headers = []
+for cell in ws[1]:
+    headers.append(str(cell.value).strip())
 
 data = []
 
-for row in range(2, ws.max_row + 1):
-    japanese = get_value(row, "Japanese")
-    english = get_value(row, "English")
-    chinese = get_value(row, "Chinese")
-    korean = get_value(row, "Korean")
-    vietnamese = get_value(row, "Vietnamese")
+for row in ws.iter_rows(min_row=2, values_only=True):
+    item = dict(zip(headers, row))
 
-    if not japanese and not english and not chinese and not korean and not vietnamese:
+    if item.get("ID") is None:
         continue
 
-    item = {
-        "id": get_value(row, "ID"),
-        "category": get_value(row, "Category"),
-        "vi": vietnamese,
-        "jp": japanese,
-        "kana": get_value(row, "Kana"),
-        "en": english,
-        "ipa": get_value(row, "IPA"),
-        "cn": chinese,
-        "pinyin": get_value(row, "Pinyin"),
-        "ko": korean,
-        "koreanReading": get_value(row, "KoreanReading"),
-        "note": get_value(row, "Note"),
-        "examples": {
-            "vi": get_value(row, "Example_VI"),
-            "jp": get_value(row, "Example_JA"),
-            "en": get_value(row, "Example_EN"),
-            "cn": get_value(row, "Example_CN"),
-            "ko": get_value(row, "Example_KO")
-        }
+    vocab_id = str(item.get("ID")).strip()
+
+    word = {
+        "id": vocab_id,
+        "category": item.get("Category") or "",
+        "vn": item.get("Vietnamese") or "",
+        "jp": item.get("Japanese") or "",
+        "kana": item.get("Kana") or "",
+        "en": item.get("English") or "",
+        "ipa": item.get("IPA") or "",
+        "cn": item.get("Chinese") or "",
+        "pinyin": item.get("Pinyin") or "",
+        "ko": item.get("Korean") or "",
+        "koread": item.get("KoreanReading") or "",
+        "example_vi": item.get("Example_VI") or "",
+        "example_ja": item.get("Example_JA") or "",
+        "example_en": item.get("Example_EN") or "",
+        "example_cn": item.get("Example_CN") or "",
+        "example_ko": item.get("Example_KO") or "",
+        "note": item.get("Note") or "",
+
+        # Tự sinh đường dẫn MP3 theo ID
+        "audio_word": f"audio/{vocab_id}_word.mp3",
+        "audio_example": f"audio/{vocab_id}_example.mp3"
     }
 
-    data.append(item)
+    data.append(word)
 
-js_content = "const vocabularyData = "
-js_content += json.dumps(data, ensure_ascii=False, indent=2)
-js_content += ";"
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write("const vocabularyData = ")
+    json.dump(data, f, ensure_ascii=False, indent=2)
+    f.write(";")
 
-with open(output_file, "w", encoding="utf-8") as f:
-    f.write(js_content)
-
-print("Đã tạo xong file data.js")
-print(f"Tổng số từ: {len(data)}")
+print("✅ Convert thành công!")
+print(f"📘 Đã đọc: {EXCEL_FILE}")
+print(f"📄 Đã tạo: {OUTPUT_FILE}")
+print(f"🔊 Audio sẽ tự hiểu dạng: audio/ID_word.mp3 và audio/ID_example.mp3")
+print(f"📦 Tổng số từ: {len(data)}")
